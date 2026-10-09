@@ -1,1 +1,5 @@
 anthropic
+openai-agents
+langgraph
+langchain-anthropic
+pydantic
