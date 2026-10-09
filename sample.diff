@@ -1,0 +1,9 @@
+--- a/force-app/main/default/classes/AccountSearch.cls
++++ b/force-app/main/default/classes/AccountSearch.cls
+@@ -10,3 +10,6 @@ public with sharing class AccountSearch {
+     public static List<Account> search(String name) {
++        String q = 'SELECT Id FROM Account WHERE Name = \'' + name + '\'';
++        List<Account> a = Database.query('SELECT Id FROM Account WHERE Name = \'' + name + '\'');
++        List<Account> b = Database.query(q);
+         return a;
+     }
