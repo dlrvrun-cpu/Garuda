@@ -1,0 +1,10 @@
+{
+  "number": 482,
+  "title": "Recalculate discount when Opportunity amount changes",
+  "body": "Replaces the flat LegacyDiscountCalc with tier-based DiscountService. Discount is recalculated in before update whenever Amount changes. Adds Discount_Percent__c and shows it on the layout.",
+  "acceptance_criteria": [
+    "Discount_Percent__c is set from the Account tier (Gold 15, Silver 10, Bronze 5)",
+    "Works for Data Loader updates of 200 Opportunities",
+    "Sales users can see the discount on the Opportunity page"
+  ]
+}
