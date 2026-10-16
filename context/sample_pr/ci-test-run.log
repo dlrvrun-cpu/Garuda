@@ -1,0 +1,814 @@
+=== sf apex run test --test-level RunLocalTests --result-format human
+Deploying to org garuda-ci ... done
+Running 400 tests
+TerritoryAssignTest.handlesNull000                   Pass  424ms
+  DEBUG|SOQL queries: 21 of 100 | DML: 1 of 150 | CPU: 158ms
+PricebookUtilTest.updatesOwner001                    Pass  394ms
+  DEBUG|SOQL queries: 19 of 100 | DML: 1 of 150 | CPU: 1873ms
+PricebookUtilTest.respectsSharing002                 Pass  58ms
+  DEBUG|SOQL queries: 3 of 100 | DML: 13 of 150 | CPU: 866ms
+LeadServiceTest.respectsSharing003                   Pass  112ms
+  DEBUG|SOQL queries: 18 of 100 | DML: 13 of 150 | CPU: 131ms
+UserProvisionTest.updatesOwner004                    Pass  248ms
+  DEBUG|SOQL queries: 21 of 100 | DML: 20 of 150 | CPU: 1203ms
+AccountServiceTest.validatesInput005                 Pass  619ms
+  DEBUG|SOQL queries: 13 of 100 | DML: 1 of 150 | CPU: 462ms
+AccountServiceTest.mergesDuplicates006               Pass  899ms
+  DEBUG|SOQL queries: 5 of 100 | DML: 9 of 150 | CPU: 868ms
+CaseRouterTest.mergesDuplicates007                   Pass  140ms
+  DEBUG|SOQL queries: 19 of 100 | DML: 9 of 150 | CPU: 1157ms
+CaseRouterTest.updatesOwner008                       Pass  615ms
+  DEBUG|SOQL queries: 19 of 100 | DML: 20 of 150 | CPU: 394ms
+TerritoryAssignTest.updatesOwner009                  Pass  580ms
+  DEBUG|SOQL queries: 23 of 100 | DML: 2 of 150 | CPU: 1165ms
+AccountServiceTest.validatesInput010                 Pass  230ms
+  DEBUG|SOQL queries: 16 of 100 | DML: 17 of 150 | CPU: 885ms
+TerritoryAssignTest.sendsEmail011                    Pass  619ms
+  DEBUG|SOQL queries: 30 of 100 | DML: 14 of 150 | CPU: 750ms
+ContactMergeTest.respectsSharing012                  Pass  833ms
+  DEBUG|SOQL queries: 6 of 100 | DML: 7 of 150 | CPU: 177ms
+UserProvisionTest.runsAsStandardUser013              Pass  557ms
+  DEBUG|SOQL queries: 16 of 100 | DML: 10 of 150 | CPU: 1503ms
+OpportunitySelectorTest.runsAsStandardUser014        Pass  643ms
+  DEBUG|SOQL queries: 3 of 100 | DML: 3 of 150 | CPU: 1058ms
+InvoiceBatchTest.handlesNull015                      Pass  795ms
+  DEBUG|SOQL queries: 11 of 100 | DML: 4 of 150 | CPU: 1921ms
+OpportunitySelectorTest.rollsUpTotals016             Pass  60ms
+  DEBUG|SOQL queries: 22 of 100 | DML: 2 of 150 | CPU: 1575ms
+PricebookUtilTest.validatesInput017                  Pass  828ms
+  DEBUG|SOQL queries: 29 of 100 | DML: 10 of 150 | CPU: 706ms
+TerritoryAssignTest.validatesInput018                Pass  528ms
+  DEBUG|SOQL queries: 19 of 100 | DML: 14 of 150 | CPU: 150ms
+LeadServiceTest.runsAsStandardUser019                Pass  505ms
+  DEBUG|SOQL queries: 23 of 100 | DML: 2 of 150 | CPU: 134ms
+ContactMergeTest.validatesInput020                   Pass  717ms
+  DEBUG|SOQL queries: 27 of 100 | DML: 14 of 150 | CPU: 592ms
+InvoiceBatchTest.skipsClosed021                      Pass  43ms
+  DEBUG|SOQL queries: 15 of 100 | DML: 11 of 150 | CPU: 354ms
+UserProvisionTest.updatesOwner022                    Pass  525ms
+  DEBUG|SOQL queries: 2 of 100 | DML: 6 of 150 | CPU: 1583ms
+ContactMergeTest.handlesNull023                      Pass  776ms
+  DEBUG|SOQL queries: 8 of 100 | DML: 12 of 150 | CPU: 810ms
+OpportunitySelectorTest.updatesOwner024              Pass  190ms
+  DEBUG|SOQL queries: 15 of 100 | DML: 12 of 150 | CPU: 1135ms
+ContactMergeTest.handlesNull025                      Pass  858ms
+  DEBUG|SOQL queries: 14 of 100 | DML: 17 of 150 | CPU: 580ms
+InvoiceBatchTest.skipsClosed026                      Pass  719ms
+  DEBUG|SOQL queries: 29 of 100 | DML: 12 of 150 | CPU: 1971ms
+QuoteSyncTest.handlesNull027                         Pass  104ms
+  DEBUG|SOQL queries: 6 of 100 | DML: 4 of 150 | CPU: 485ms
+QuoteSyncTest.insertsBulk028                         Pass  516ms
+  DEBUG|SOQL queries: 27 of 100 | DML: 18 of 150 | CPU: 383ms
+ContactMergeTest.runsAsStandardUser029               Pass  24ms
+  DEBUG|SOQL queries: 5 of 100 | DML: 13 of 150 | CPU: 1104ms
+TerritoryAssignTest.validatesInput030                Pass  599ms
+  DEBUG|SOQL queries: 11 of 100 | DML: 4 of 150 | CPU: 1424ms
+PricebookUtilTest.validatesInput031                  Pass  690ms
+  DEBUG|SOQL queries: 22 of 100 | DML: 1 of 150 | CPU: 945ms
+PricebookUtilTest.rollsUpTotals032                   Pass  427ms
+  DEBUG|SOQL queries: 13 of 100 | DML: 12 of 150 | CPU: 222ms
+OpportunitySelectorTest.rollsUpTotals033             Pass  83ms
+  DEBUG|SOQL queries: 7 of 100 | DML: 2 of 150 | CPU: 437ms
+OpportunitySelectorTest.handlesNull034               Pass  132ms
+  DEBUG|SOQL queries: 11 of 100 | DML: 19 of 150 | CPU: 117ms
+LeadServiceTest.insertsBulk035                       Pass  600ms
+  DEBUG|SOQL queries: 5 of 100 | DML: 17 of 150 | CPU: 217ms
+TerritoryAssignTest.validatesInput036                Pass  46ms
+  DEBUG|SOQL queries: 3 of 100 | DML: 6 of 150 | CPU: 1267ms
+InvoiceBatchTest.handlesNull037                      Pass  669ms
+  DEBUG|SOQL queries: 9 of 100 | DML: 11 of 150 | CPU: 1243ms
+TerritoryAssignTest.sendsEmail038                    Pass  145ms
+  DEBUG|SOQL queries: 4 of 100 | DML: 15 of 150 | CPU: 964ms
+OpportunitySelectorTest.sendsEmail039                Pass  339ms
+  DEBUG|SOQL queries: 3 of 100 | DML: 4 of 150 | CPU: 219ms
+TerritoryAssignTest.runsAsStandardUser040            Pass  510ms
+  DEBUG|SOQL queries: 27 of 100 | DML: 5 of 150 | CPU: 1067ms
+AccountServiceTest.respectsSharing041                Pass  560ms
+  DEBUG|SOQL queries: 12 of 100 | DML: 4 of 150 | CPU: 1423ms
+PricebookUtilTest.insertsBulk042                     Pass  796ms
+  DEBUG|SOQL queries: 17 of 100 | DML: 9 of 150 | CPU: 1326ms
+LeadServiceTest.runsAsStandardUser043                Pass  550ms
+  DEBUG|SOQL queries: 12 of 100 | DML: 5 of 150 | CPU: 738ms
+QuoteSyncTest.mergesDuplicates044                    Pass  574ms
+  DEBUG|SOQL queries: 25 of 100 | DML: 16 of 150 | CPU: 685ms
+QuoteSyncTest.validatesInput045                      Pass  850ms
+  DEBUG|SOQL queries: 26 of 100 | DML: 6 of 150 | CPU: 1660ms
+QuoteSyncTest.rollsUpTotals046                       Pass  777ms
+  DEBUG|SOQL queries: 26 of 100 | DML: 7 of 150 | CPU: 419ms
+PricebookUtilTest.sendsEmail047                      Pass  384ms
+  DEBUG|SOQL queries: 24 of 100 | DML: 0 of 150 | CPU: 67ms
+ContactMergeTest.sendsEmail048                       Pass  285ms
+  DEBUG|SOQL queries: 7 of 100 | DML: 19 of 150 | CPU: 1968ms
+TerritoryAssignTest.sendsEmail049                    Pass  847ms
+  DEBUG|SOQL queries: 30 of 100 | DML: 11 of 150 | CPU: 1965ms
+TerritoryAssignTest.updatesOwner050                  Pass  245ms
+  DEBUG|SOQL queries: 4 of 100 | DML: 7 of 150 | CPU: 972ms
+QuoteSyncTest.skipsClosed051                         Pass  229ms
+  DEBUG|SOQL queries: 16 of 100 | DML: 19 of 150 | CPU: 1853ms
+UserProvisionTest.insertsBulk052                     Pass  510ms
+  DEBUG|SOQL queries: 30 of 100 | DML: 20 of 150 | CPU: 714ms
+LeadServiceTest.updatesOwner053                      Pass  417ms
+  DEBUG|SOQL queries: 26 of 100 | DML: 6 of 150 | CPU: 989ms
+CaseRouterTest.rollsUpTotals054                      Pass  828ms
+  DEBUG|SOQL queries: 21 of 100 | DML: 10 of 150 | CPU: 187ms
+InvoiceBatchTest.sendsEmail055                       Pass  431ms
+  DEBUG|SOQL queries: 24 of 100 | DML: 2 of 150 | CPU: 1494ms
+CaseRouterTest.handlesNull056                        Pass  150ms
+  DEBUG|SOQL queries: 1 of 100 | DML: 4 of 150 | CPU: 1219ms
+OpportunitySelectorTest.handlesNull057               Pass  646ms
+  DEBUG|SOQL queries: 27 of 100 | DML: 19 of 150 | CPU: 981ms
+TerritoryAssignTest.handlesNull058                   Pass  581ms
+  DEBUG|SOQL queries: 18 of 100 | DML: 4 of 150 | CPU: 53ms
+AccountServiceTest.updatesOwner059                   Pass  559ms
+  DEBUG|SOQL queries: 24 of 100 | DML: 4 of 150 | CPU: 898ms
+QuoteSyncTest.respectsSharing060                     Pass  48ms
+  DEBUG|SOQL queries: 9 of 100 | DML: 6 of 150 | CPU: 609ms
+PricebookUtilTest.respectsSharing061                 Pass  802ms
+  DEBUG|SOQL queries: 19 of 100 | DML: 10 of 150 | CPU: 541ms
+PricebookUtilTest.rollsUpTotals062                   Pass  874ms
+  DEBUG|SOQL queries: 5 of 100 | DML: 1 of 150 | CPU: 1873ms
+TerritoryAssignTest.sendsEmail063                    Pass  698ms
+  DEBUG|SOQL queries: 19 of 100 | DML: 16 of 150 | CPU: 871ms
+PricebookUtilTest.handlesNull064                     Pass  564ms
+  DEBUG|SOQL queries: 5 of 100 | DML: 16 of 150 | CPU: 1055ms
+AccountServiceTest.sendsEmail065                     Pass  815ms
+  DEBUG|SOQL queries: 6 of 100 | DML: 19 of 150 | CPU: 18ms
+CaseRouterTest.handlesNull066                        Pass  164ms
+  DEBUG|SOQL queries: 16 of 100 | DML: 19 of 150 | CPU: 1495ms
+LeadServiceTest.mergesDuplicates067                  Pass  83ms
+  DEBUG|SOQL queries: 11 of 100 | DML: 16 of 150 | CPU: 1096ms
+PricebookUtilTest.sendsEmail068                      Pass  823ms
+  DEBUG|SOQL queries: 25 of 100 | DML: 3 of 150 | CPU: 1818ms
+PricebookUtilTest.insertsBulk069                     Pass  274ms
+  DEBUG|SOQL queries: 7 of 100 | DML: 8 of 150 | CPU: 96ms
+LeadServiceTest.mergesDuplicates070                  Pass  483ms
+  DEBUG|SOQL queries: 18 of 100 | DML: 0 of 150 | CPU: 1566ms
+LeadServiceTest.sendsEmail071                        Pass  353ms
+  DEBUG|SOQL queries: 20 of 100 | DML: 16 of 150 | CPU: 1251ms
+PricebookUtilTest.respectsSharing072                 Pass  729ms
+  DEBUG|SOQL queries: 9 of 100 | DML: 14 of 150 | CPU: 1050ms
+PricebookUtilTest.sendsEmail073                      Pass  539ms
+  DEBUG|SOQL queries: 8 of 100 | DML: 16 of 150 | CPU: 1805ms
+ContactMergeTest.mergesDuplicates074                 Pass  227ms
+  DEBUG|SOQL queries: 27 of 100 | DML: 14 of 150 | CPU: 290ms
+InvoiceBatchTest.updatesOwner075                     Pass  421ms
+  DEBUG|SOQL queries: 15 of 100 | DML: 10 of 150 | CPU: 158ms
+QuoteSyncTest.rollsUpTotals076                       Pass  94ms
+  DEBUG|SOQL queries: 7 of 100 | DML: 9 of 150 | CPU: 1615ms
+LeadServiceTest.handlesNull077                       Pass  753ms
+  DEBUG|SOQL queries: 21 of 100 | DML: 11 of 150 | CPU: 302ms
+ContactMergeTest.handlesNull078                      Pass  498ms
+  DEBUG|SOQL queries: 8 of 100 | DML: 3 of 150 | CPU: 825ms
+OpportunitySelectorTest.handlesNull079               Pass  703ms
+  DEBUG|SOQL queries: 27 of 100 | DML: 7 of 150 | CPU: 340ms
+InvoiceBatchTest.mergesDuplicates080                 Pass  433ms
+  DEBUG|SOQL queries: 11 of 100 | DML: 13 of 150 | CPU: 410ms
+TerritoryAssignTest.skipsClosed081                   Pass  114ms
+  DEBUG|SOQL queries: 24 of 100 | DML: 11 of 150 | CPU: 49ms
+TerritoryAssignTest.mergesDuplicates082              Pass  489ms
+  DEBUG|SOQL queries: 15 of 100 | DML: 0 of 150 | CPU: 797ms
+TerritoryAssignTest.mergesDuplicates083              Pass  658ms
+  DEBUG|SOQL queries: 10 of 100 | DML: 16 of 150 | CPU: 1977ms
+LeadServiceTest.updatesOwner084                      Pass  827ms
+  DEBUG|SOQL queries: 8 of 100 | DML: 3 of 150 | CPU: 182ms
+ContactMergeTest.runsAsStandardUser085               Pass  60ms
+  DEBUG|SOQL queries: 29 of 100 | DML: 5 of 150 | CPU: 563ms
+CaseRouterTest.rollsUpTotals086                      Pass  889ms
+  DEBUG|SOQL queries: 30 of 100 | DML: 8 of 150 | CPU: 841ms
+CaseRouterTest.mergesDuplicates087                   Pass  547ms
+  DEBUG|SOQL queries: 19 of 100 | DML: 15 of 150 | CPU: 1444ms
+TerritoryAssignTest.updatesOwner088                  Pass  305ms
+  DEBUG|SOQL queries: 2 of 100 | DML: 5 of 150 | CPU: 881ms
+LeadServiceTest.runsAsStandardUser089                Pass  37ms
+  DEBUG|SOQL queries: 21 of 100 | DML: 2 of 150 | CPU: 1651ms
+ContactMergeTest.updatesOwner090                     Pass  642ms
+  DEBUG|SOQL queries: 28 of 100 | DML: 7 of 150 | CPU: 146ms
+ContactMergeTest.updatesOwner091                     Pass  484ms
+  DEBUG|SOQL queries: 1 of 100 | DML: 10 of 150 | CPU: 1142ms
+InvoiceBatchTest.runsAsStandardUser092               Pass  656ms
+  DEBUG|SOQL queries: 5 of 100 | DML: 1 of 150 | CPU: 1089ms
+QuoteSyncTest.updatesOwner093                        Pass  185ms
+  DEBUG|SOQL queries: 9 of 100 | DML: 1 of 150 | CPU: 380ms
+QuoteSyncTest.runsAsStandardUser094                  Pass  663ms
+  DEBUG|SOQL queries: 10 of 100 | DML: 16 of 150 | CPU: 1565ms
+QuoteSyncTest.runsAsStandardUser095                  Pass  476ms
+  DEBUG|SOQL queries: 17 of 100 | DML: 5 of 150 | CPU: 564ms
+TerritoryAssignTest.insertsBulk096                   Pass  276ms
+  DEBUG|SOQL queries: 2 of 100 | DML: 0 of 150 | CPU: 47ms
+PricebookUtilTest.mergesDuplicates097                Pass  214ms
+  DEBUG|SOQL queries: 17 of 100 | DML: 15 of 150 | CPU: 513ms
+OpportunitySelectorTest.updatesOwner098              Pass  694ms
+  DEBUG|SOQL queries: 27 of 100 | DML: 20 of 150 | CPU: 895ms
+OpportunitySelectorTest.mergesDuplicates099          Pass  874ms
+  DEBUG|SOQL queries: 29 of 100 | DML: 12 of 150 | CPU: 1997ms
+PricebookUtilTest.runsAsStandardUser100              Pass  724ms
+  DEBUG|SOQL queries: 7 of 100 | DML: 7 of 150 | CPU: 711ms
+QuoteSyncTest.handlesNull101                         Pass  434ms
+  DEBUG|SOQL queries: 12 of 100 | DML: 1 of 150 | CPU: 1724ms
+CaseRouterTest.insertsBulk102                        Pass  92ms
+  DEBUG|SOQL queries: 21 of 100 | DML: 8 of 150 | CPU: 892ms
+CaseRouterTest.insertsBulk103                        Pass  106ms
+  DEBUG|SOQL queries: 22 of 100 | DML: 12 of 150 | CPU: 1792ms
+PricebookUtilTest.runsAsStandardUser104              Pass  633ms
+  DEBUG|SOQL queries: 8 of 100 | DML: 9 of 150 | CPU: 102ms
+OpportunitySelectorTest.handlesNull105               Pass  181ms
+  DEBUG|SOQL queries: 9 of 100 | DML: 14 of 150 | CPU: 17ms
+ContactMergeTest.skipsClosed106                      Pass  356ms
+  DEBUG|SOQL queries: 18 of 100 | DML: 10 of 150 | CPU: 510ms
+AccountServiceTest.runsAsStandardUser107             Pass  243ms
+  DEBUG|SOQL queries: 12 of 100 | DML: 5 of 150 | CPU: 12ms
+TerritoryAssignTest.rollsUpTotals108                 Pass  105ms
+  DEBUG|SOQL queries: 16 of 100 | DML: 8 of 150 | CPU: 1039ms
+QuoteSyncTest.respectsSharing109                     Pass  536ms
+  DEBUG|SOQL queries: 25 of 100 | DML: 0 of 150 | CPU: 196ms
+ContactMergeTest.updatesOwner110                     Pass  167ms
+  DEBUG|SOQL queries: 13 of 100 | DML: 18 of 150 | CPU: 95ms
+InvoiceBatchTest.insertsBulk111                      Pass  326ms
+  DEBUG|SOQL queries: 10 of 100 | DML: 20 of 150 | CPU: 486ms
+LeadServiceTest.validatesInput112                    Pass  561ms
+  DEBUG|SOQL queries: 28 of 100 | DML: 4 of 150 | CPU: 1356ms
+UserProvisionTest.rollsUpTotals113                   Pass  802ms
+  DEBUG|SOQL queries: 11 of 100 | DML: 15 of 150 | CPU: 316ms
+ContactMergeTest.validatesInput114                   Pass  678ms
+  DEBUG|SOQL queries: 5 of 100 | DML: 1 of 150 | CPU: 1699ms
+PricebookUtilTest.rollsUpTotals115                   Pass  771ms
+  DEBUG|SOQL queries: 23 of 100 | DML: 16 of 150 | CPU: 295ms
+PricebookUtilTest.mergesDuplicates116                Pass  602ms
+  DEBUG|SOQL queries: 27 of 100 | DML: 0 of 150 | CPU: 1702ms
+UserProvisionTest.respectsSharing117                 Pass  107ms
+  DEBUG|SOQL queries: 1 of 100 | DML: 1 of 150 | CPU: 282ms
+TerritoryAssignTest.updatesOwner118                  Pass  405ms
+  DEBUG|SOQL queries: 27 of 100 | DML: 14 of 150 | CPU: 1153ms
+AccountServiceTest.insertsBulk119                    Pass  661ms
+  DEBUG|SOQL queries: 18 of 100 | DML: 7 of 150 | CPU: 1012ms
+ContactMergeTest.insertsBulk120                      Pass  487ms
+  DEBUG|SOQL queries: 26 of 100 | DML: 2 of 150 | CPU: 1542ms
+PricebookUtilTest.mergesDuplicates121                Pass  114ms
+  DEBUG|SOQL queries: 22 of 100 | DML: 16 of 150 | CPU: 145ms
+OpportunitySelectorTest.runsAsStandardUser122        Pass  848ms
+  DEBUG|SOQL queries: 3 of 100 | DML: 8 of 150 | CPU: 490ms
+QuoteSyncTest.respectsSharing123                     Pass  777ms
+  DEBUG|SOQL queries: 21 of 100 | DML: 14 of 150 | CPU: 1021ms
+InvoiceBatchTest.updatesOwner124                     Pass  510ms
+  DEBUG|SOQL queries: 30 of 100 | DML: 9 of 150 | CPU: 1580ms
+AccountServiceTest.validatesInput125                 Pass  667ms
+  DEBUG|SOQL queries: 21 of 100 | DML: 6 of 150 | CPU: 168ms
+UserProvisionTest.handlesNull126                     Pass  359ms
+  DEBUG|SOQL queries: 9 of 100 | DML: 20 of 150 | CPU: 1532ms
+ContactMergeTest.validatesInput127                   Pass  601ms
+  DEBUG|SOQL queries: 5 of 100 | DML: 0 of 150 | CPU: 997ms
+AccountServiceTest.sendsEmail128                     Pass  295ms
+  DEBUG|SOQL queries: 22 of 100 | DML: 3 of 150 | CPU: 1427ms
+QuoteSyncTest.sendsEmail129                          Pass  317ms
+  DEBUG|SOQL queries: 23 of 100 | DML: 16 of 150 | CPU: 594ms
+OpportunitySelectorTest.sendsEmail130                Pass  497ms
+  DEBUG|SOQL queries: 25 of 100 | DML: 3 of 150 | CPU: 1840ms
+PricebookUtilTest.respectsSharing131                 Pass  339ms
+  DEBUG|SOQL queries: 3 of 100 | DML: 15 of 150 | CPU: 45ms
+ContactMergeTest.sendsEmail132                       Pass  98ms
+  DEBUG|SOQL queries: 27 of 100 | DML: 16 of 150 | CPU: 1992ms
+OpportunitySelectorTest.runsAsStandardUser133        Pass  416ms
+  DEBUG|SOQL queries: 7 of 100 | DML: 6 of 150 | CPU: 162ms
+UserProvisionTest.updatesOwner134                    Pass  165ms
+  DEBUG|SOQL queries: 24 of 100 | DML: 16 of 150 | CPU: 546ms
+TerritoryAssignTest.handlesNull135                   Pass  637ms
+  DEBUG|SOQL queries: 27 of 100 | DML: 20 of 150 | CPU: 1051ms
+ContactMergeTest.updatesOwner136                     Pass  740ms
+  DEBUG|SOQL queries: 12 of 100 | DML: 7 of 150 | CPU: 1029ms
+OpportunitySelectorTest.rollsUpTotals137             Pass  45ms
+  DEBUG|SOQL queries: 6 of 100 | DML: 0 of 150 | CPU: 1955ms
+OpportunitySelectorTest.sendsEmail138                Pass  435ms
+  DEBUG|SOQL queries: 10 of 100 | DML: 4 of 150 | CPU: 862ms
+TerritoryAssignTest.rollsUpTotals139                 Pass  343ms
+  DEBUG|SOQL queries: 4 of 100 | DML: 10 of 150 | CPU: 13ms
+TerritoryAssignTest.skipsClosed140                   Pass  879ms
+  DEBUG|SOQL queries: 13 of 100 | DML: 3 of 150 | CPU: 1934ms
+QuoteSyncTest.insertsBulk141                         Pass  777ms
+  DEBUG|SOQL queries: 10 of 100 | DML: 8 of 150 | CPU: 772ms
+LeadServiceTest.rollsUpTotals142                     Pass  419ms
+  DEBUG|SOQL queries: 28 of 100 | DML: 18 of 150 | CPU: 166ms
+TerritoryAssignTest.rollsUpTotals143                 Pass  793ms
+  DEBUG|SOQL queries: 9 of 100 | DML: 1 of 150 | CPU: 584ms
+LeadServiceTest.insertsBulk144                       Pass  874ms
+  DEBUG|SOQL queries: 22 of 100 | DML: 9 of 150 | CPU: 1310ms
+CaseRouterTest.respectsSharing145                    Pass  292ms
+  DEBUG|SOQL queries: 14 of 100 | DML: 16 of 150 | CPU: 656ms
+QuoteSyncTest.skipsClosed146                         Pass  823ms
+  DEBUG|SOQL queries: 14 of 100 | DML: 0 of 150 | CPU: 1672ms
+InvoiceBatchTest.mergesDuplicates147                 Pass  582ms
+  DEBUG|SOQL queries: 7 of 100 | DML: 2 of 150 | CPU: 111ms
+InvoiceBatchTest.sendsEmail148                       Pass  649ms
+  DEBUG|SOQL queries: 25 of 100 | DML: 4 of 150 | CPU: 1329ms
+ContactMergeTest.sendsEmail149                       Pass  70ms
+  DEBUG|SOQL queries: 30 of 100 | DML: 17 of 150 | CPU: 270ms
+CaseRouterTest.sendsEmail150                         Pass  444ms
+  DEBUG|SOQL queries: 11 of 100 | DML: 9 of 150 | CPU: 619ms
+ContactMergeTest.runsAsStandardUser151               Pass  435ms
+  DEBUG|SOQL queries: 21 of 100 | DML: 7 of 150 | CPU: 626ms
+OpportunitySelectorTest.mergesDuplicates152          Pass  704ms
+  DEBUG|SOQL queries: 13 of 100 | DML: 3 of 150 | CPU: 352ms
+CaseRouterTest.updatesOwner153                       Pass  232ms
+  DEBUG|SOQL queries: 17 of 100 | DML: 15 of 150 | CPU: 1137ms
+QuoteSyncTest.sendsEmail154                          Pass  360ms
+  DEBUG|SOQL queries: 25 of 100 | DML: 14 of 150 | CPU: 885ms
+CaseRouterTest.mergesDuplicates155                   Pass  217ms
+  DEBUG|SOQL queries: 8 of 100 | DML: 2 of 150 | CPU: 367ms
+TerritoryAssignTest.mergesDuplicates156              Pass  113ms
+  DEBUG|SOQL queries: 11 of 100 | DML: 7 of 150 | CPU: 764ms
+ContactMergeTest.validatesInput157                   Pass  226ms
+  DEBUG|SOQL queries: 29 of 100 | DML: 0 of 150 | CPU: 1545ms
+InvoiceBatchTest.rollsUpTotals158                    Pass  443ms
+  DEBUG|SOQL queries: 24 of 100 | DML: 16 of 150 | CPU: 440ms
+InvoiceBatchTest.runsAsStandardUser159               Pass  366ms
+  DEBUG|SOQL queries: 25 of 100 | DML: 1 of 150 | CPU: 1030ms
+ContactMergeTest.validatesInput160                   Pass  388ms
+  DEBUG|SOQL queries: 5 of 100 | DML: 16 of 150 | CPU: 1093ms
+QuoteSyncTest.updatesOwner161                        Pass  297ms
+  DEBUG|SOQL queries: 29 of 100 | DML: 7 of 150 | CPU: 797ms
+InvoiceBatchTest.sendsEmail162                       Pass  462ms
+  DEBUG|SOQL queries: 10 of 100 | DML: 0 of 150 | CPU: 270ms
+AccountServiceTest.rollsUpTotals163                  Pass  746ms
+  DEBUG|SOQL queries: 25 of 100 | DML: 15 of 150 | CPU: 1993ms
+UserProvisionTest.sendsEmail164                      Pass  20ms
+  DEBUG|SOQL queries: 3 of 100 | DML: 12 of 150 | CPU: 1915ms
+PricebookUtilTest.sendsEmail165                      Pass  479ms
+  DEBUG|SOQL queries: 8 of 100 | DML: 3 of 150 | CPU: 468ms
+CaseRouterTest.handlesNull166                        Pass  554ms
+  DEBUG|SOQL queries: 22 of 100 | DML: 3 of 150 | CPU: 1938ms
+OpportunitySelectorTest.updatesOwner167              Pass  584ms
+  DEBUG|SOQL queries: 25 of 100 | DML: 1 of 150 | CPU: 12ms
+CaseRouterTest.respectsSharing168                    Pass  603ms
+  DEBUG|SOQL queries: 30 of 100 | DML: 1 of 150 | CPU: 1331ms
+ContactMergeTest.handlesNull169                      Pass  661ms
+  DEBUG|SOQL queries: 9 of 100 | DML: 16 of 150 | CPU: 1313ms
+InvoiceBatchTest.updatesOwner170                     Pass  121ms
+  DEBUG|SOQL queries: 3 of 100 | DML: 9 of 150 | CPU: 1084ms
+UserProvisionTest.respectsSharing171                 Pass  417ms
+  DEBUG|SOQL queries: 9 of 100 | DML: 7 of 150 | CPU: 1628ms
+UserProvisionTest.insertsBulk172                     Pass  30ms
+  DEBUG|SOQL queries: 18 of 100 | DML: 9 of 150 | CPU: 953ms
+ContactMergeTest.skipsClosed173                      Pass  680ms
+  DEBUG|SOQL queries: 27 of 100 | DML: 7 of 150 | CPU: 983ms
+PricebookUtilTest.respectsSharing174                 Pass  580ms
+  DEBUG|SOQL queries: 8 of 100 | DML: 0 of 150 | CPU: 1977ms
+InvoiceBatchTest.runsAsStandardUser175               Pass  76ms
+  DEBUG|SOQL queries: 1 of 100 | DML: 6 of 150 | CPU: 1030ms
+InvoiceBatchTest.updatesOwner176                     Pass  283ms
+  DEBUG|SOQL queries: 8 of 100 | DML: 13 of 150 | CPU: 1904ms
+TerritoryAssignTest.respectsSharing177               Pass  524ms
+  DEBUG|SOQL queries: 2 of 100 | DML: 10 of 150 | CPU: 1481ms
+InvoiceBatchTest.skipsClosed178                      Pass  718ms
+  DEBUG|SOQL queries: 13 of 100 | DML: 6 of 150 | CPU: 23ms
+ContactMergeTest.mergesDuplicates179                 Pass  89ms
+  DEBUG|SOQL queries: 7 of 100 | DML: 15 of 150 | CPU: 1996ms
+QuoteSyncTest.runsAsStandardUser180                  Pass  804ms
+  DEBUG|SOQL queries: 27 of 100 | DML: 6 of 150 | CPU: 482ms
+OpportunitySelectorTest.respectsSharing181           Pass  291ms
+  DEBUG|SOQL queries: 25 of 100 | DML: 9 of 150 | CPU: 233ms
+UserProvisionTest.sendsEmail182                      Pass  644ms
+  DEBUG|SOQL queries: 6 of 100 | DML: 7 of 150 | CPU: 1003ms
+InvoiceBatchTest.insertsBulk183                      Pass  629ms
+  DEBUG|SOQL queries: 5 of 100 | DML: 12 of 150 | CPU: 121ms
+QuoteSyncTest.insertsBulk184                         Pass  630ms
+  DEBUG|SOQL queries: 5 of 100 | DML: 13 of 150 | CPU: 116ms
+AccountServiceTest.handlesNull185                    Pass  422ms
+  DEBUG|SOQL queries: 15 of 100 | DML: 10 of 150 | CPU: 1510ms
+LeadServiceTest.updatesOwner186                      Pass  189ms
+  DEBUG|SOQL queries: 11 of 100 | DML: 6 of 150 | CPU: 389ms
+PricebookUtilTest.sendsEmail187                      Pass  52ms
+  DEBUG|SOQL queries: 10 of 100 | DML: 12 of 150 | CPU: 1728ms
+TerritoryAssignTest.skipsClosed188                   Pass  473ms
+  DEBUG|SOQL queries: 6 of 100 | DML: 3 of 150 | CPU: 15ms
+LeadServiceTest.runsAsStandardUser189                Pass  102ms
+  DEBUG|SOQL queries: 12 of 100 | DML: 13 of 150 | CPU: 1966ms
+LeadServiceTest.mergesDuplicates190                  Pass  797ms
+  DEBUG|SOQL queries: 7 of 100 | DML: 12 of 150 | CPU: 740ms
+ContactMergeTest.rollsUpTotals191                    Pass  109ms
+  DEBUG|SOQL queries: 2 of 100 | DML: 15 of 150 | CPU: 410ms
+TerritoryAssignTest.mergesDuplicates192              Pass  477ms
+  DEBUG|SOQL queries: 7 of 100 | DML: 10 of 150 | CPU: 755ms
+OpportunitySelectorTest.insertsBulk193               Pass  666ms
+  DEBUG|SOQL queries: 14 of 100 | DML: 7 of 150 | CPU: 1672ms
+InvoiceBatchTest.insertsBulk194                      Pass  404ms
+  DEBUG|SOQL queries: 2 of 100 | DML: 14 of 150 | CPU: 138ms
+AccountServiceTest.runsAsStandardUser195             Pass  219ms
+  DEBUG|SOQL queries: 24 of 100 | DML: 2 of 150 | CPU: 1850ms
+UserProvisionTest.skipsClosed196                     Pass  391ms
+  DEBUG|SOQL queries: 9 of 100 | DML: 10 of 150 | CPU: 1971ms
+UserProvisionTest.insertsBulk197                     Pass  288ms
+  DEBUG|SOQL queries: 24 of 100 | DML: 10 of 150 | CPU: 1902ms
+ContactMergeTest.runsAsStandardUser198               Pass  23ms
+  DEBUG|SOQL queries: 24 of 100 | DML: 19 of 150 | CPU: 1886ms
+LeadServiceTest.insertsBulk199                       Pass  865ms
+  DEBUG|SOQL queries: 8 of 100 | DML: 3 of 150 | CPU: 983ms
+OpportunitySelectorTest.rollsUpTotals200             Pass  828ms
+  DEBUG|SOQL queries: 9 of 100 | DML: 13 of 150 | CPU: 1678ms
+OpportunitySelectorTest.handlesNull201               Pass  528ms
+  DEBUG|SOQL queries: 6 of 100 | DML: 0 of 150 | CPU: 1653ms
+ContactMergeTest.handlesNull202                      Pass  641ms
+  DEBUG|SOQL queries: 8 of 100 | DML: 10 of 150 | CPU: 1773ms
+TerritoryAssignTest.sendsEmail203                    Pass  390ms
+  DEBUG|SOQL queries: 26 of 100 | DML: 19 of 150 | CPU: 171ms
+PricebookUtilTest.respectsSharing204                 Pass  421ms
+  DEBUG|SOQL queries: 25 of 100 | DML: 5 of 150 | CPU: 516ms
+InvoiceBatchTest.updatesOwner205                     Pass  685ms
+  DEBUG|SOQL queries: 2 of 100 | DML: 15 of 150 | CPU: 1141ms
+PricebookUtilTest.skipsClosed206                     Pass  184ms
+  DEBUG|SOQL queries: 14 of 100 | DML: 3 of 150 | CPU: 157ms
+ContactMergeTest.validatesInput207                   Pass  106ms
+  DEBUG|SOQL queries: 7 of 100 | DML: 3 of 150 | CPU: 872ms
+OpportunitySelectorTest.sendsEmail208                Pass  197ms
+  DEBUG|SOQL queries: 8 of 100 | DML: 4 of 150 | CPU: 863ms
+OpportunitySelectorTest.validatesInput209            Pass  710ms
+  DEBUG|SOQL queries: 8 of 100 | DML: 17 of 150 | CPU: 1744ms
+LeadServiceTest.runsAsStandardUser210                Pass  320ms
+  DEBUG|SOQL queries: 9 of 100 | DML: 18 of 150 | CPU: 558ms
+TerritoryAssignTest.runsAsStandardUser211            Pass  775ms
+  DEBUG|SOQL queries: 9 of 100 | DML: 6 of 150 | CPU: 909ms
+QuoteSyncTest.handlesNull212                         Pass  271ms
+  DEBUG|SOQL queries: 8 of 100 | DML: 4 of 150 | CPU: 586ms
+UserProvisionTest.respectsSharing213                 Pass  354ms
+  DEBUG|SOQL queries: 3 of 100 | DML: 12 of 150 | CPU: 525ms
+QuoteSyncTest.mergesDuplicates214                    Pass  558ms
+  DEBUG|SOQL queries: 8 of 100 | DML: 20 of 150 | CPU: 1665ms
+LeadServiceTest.sendsEmail215                        Pass  57ms
+  DEBUG|SOQL queries: 4 of 100 | DML: 0 of 150 | CPU: 982ms
+QuoteSyncTest.sendsEmail216                          Pass  402ms
+  DEBUG|SOQL queries: 2 of 100 | DML: 9 of 150 | CPU: 486ms
+LeadServiceTest.insertsBulk217                       Pass  214ms
+  DEBUG|SOQL queries: 20 of 100 | DML: 18 of 150 | CPU: 407ms
+LeadServiceTest.skipsClosed218                       Pass  544ms
+  DEBUG|SOQL queries: 28 of 100 | DML: 5 of 150 | CPU: 929ms
+UserProvisionTest.runsAsStandardUser219              Pass  813ms
+  DEBUG|SOQL queries: 25 of 100 | DML: 0 of 150 | CPU: 226ms
+UserProvisionTest.validatesInput220                  Pass  378ms
+  DEBUG|SOQL queries: 7 of 100 | DML: 1 of 150 | CPU: 765ms
+TerritoryAssignTest.handlesNull221                   Pass  65ms
+  DEBUG|SOQL queries: 7 of 100 | DML: 8 of 150 | CPU: 88ms
+UserProvisionTest.respectsSharing222                 Pass  854ms
+  DEBUG|SOQL queries: 1 of 100 | DML: 10 of 150 | CPU: 847ms
+TerritoryAssignTest.handlesNull223                   Pass  655ms
+  DEBUG|SOQL queries: 10 of 100 | DML: 2 of 150 | CPU: 426ms
+AccountServiceTest.sendsEmail224                     Pass  581ms
+  DEBUG|SOQL queries: 16 of 100 | DML: 2 of 150 | CPU: 845ms
+LeadServiceTest.rollsUpTotals225                     Pass  699ms
+  DEBUG|SOQL queries: 18 of 100 | DML: 4 of 150 | CPU: 1319ms
+PricebookUtilTest.updatesOwner226                    Pass  688ms
+  DEBUG|SOQL queries: 6 of 100 | DML: 12 of 150 | CPU: 1434ms
+ContactMergeTest.rollsUpTotals227                    Pass  310ms
+  DEBUG|SOQL queries: 22 of 100 | DML: 9 of 150 | CPU: 865ms
+AccountServiceTest.runsAsStandardUser228             Pass  783ms
+  DEBUG|SOQL queries: 19 of 100 | DML: 11 of 150 | CPU: 858ms
+InvoiceBatchTest.insertsBulk229                      Pass  805ms
+  DEBUG|SOQL queries: 26 of 100 | DML: 11 of 150 | CPU: 1329ms
+QuoteSyncTest.rollsUpTotals230                       Pass  765ms
+  DEBUG|SOQL queries: 13 of 100 | DML: 6 of 150 | CPU: 1939ms
+AccountServiceTest.rollsUpTotals231                  Pass  180ms
+  DEBUG|SOQL queries: 14 of 100 | DML: 3 of 150 | CPU: 1690ms
+LeadServiceTest.rollsUpTotals232                     Pass  611ms
+  DEBUG|SOQL queries: 29 of 100 | DML: 11 of 150 | CPU: 953ms
+OpportunityServiceTest.closeOne                      Pass  412ms
+OpportunityServiceTest.bulkClose                     Fail  3,921ms
+  System.LimitException: Too many SOQL queries: 101
+  Class.OpportunityService.closeLostOpportunities: line 21, column 1
+  Class.OpportunityServiceTest.bulkClose: line 37, column 1
+OpportunityServiceTest.expireStaleClosesAll          Fail  3,604ms
+  System.LimitException: Too many SOQL queries: 101
+  Class.OpportunityService.closeLostOpportunities: line 21, column 1
+  Class.OpportunityService.expireStale: line 76, column 1
+CaseRouterTest.handlesNull236                        Pass  35ms
+  DEBUG|SOQL queries: 2 of 100 | DML: 17 of 150 | CPU: 301ms
+InvoiceBatchTest.updatesOwner237                     Pass  606ms
+  DEBUG|SOQL queries: 20 of 100 | DML: 11 of 150 | CPU: 1519ms
+PricebookUtilTest.handlesNull238                     Pass  169ms
+  DEBUG|SOQL queries: 12 of 100 | DML: 9 of 150 | CPU: 341ms
+PricebookUtilTest.handlesNull239                     Pass  88ms
+  DEBUG|SOQL queries: 4 of 100 | DML: 12 of 150 | CPU: 1014ms
+QuoteSyncTest.runsAsStandardUser240                  Pass  149ms
+  DEBUG|SOQL queries: 27 of 100 | DML: 1 of 150 | CPU: 1879ms
+OpportunitySelectorTest.skipsClosed241               Pass  74ms
+  DEBUG|SOQL queries: 20 of 100 | DML: 20 of 150 | CPU: 804ms
+LeadServiceTest.validatesInput242                    Pass  724ms
+  DEBUG|SOQL queries: 27 of 100 | DML: 5 of 150 | CPU: 1321ms
+QuoteSyncTest.validatesInput243                      Pass  434ms
+  DEBUG|SOQL queries: 20 of 100 | DML: 6 of 150 | CPU: 1708ms
+OpportunitySelectorTest.handlesNull244               Pass  598ms
+  DEBUG|SOQL queries: 7 of 100 | DML: 1 of 150 | CPU: 828ms
+PricebookUtilTest.handlesNull245                     Pass  412ms
+  DEBUG|SOQL queries: 12 of 100 | DML: 3 of 150 | CPU: 316ms
+QuoteSyncTest.respectsSharing246                     Pass  62ms
+  DEBUG|SOQL queries: 29 of 100 | DML: 17 of 150 | CPU: 1735ms
+AccountServiceTest.skipsClosed247                    Pass  140ms
+  DEBUG|SOQL queries: 13 of 100 | DML: 19 of 150 | CPU: 943ms
+PricebookUtilTest.runsAsStandardUser248              Pass  684ms
+  DEBUG|SOQL queries: 14 of 100 | DML: 9 of 150 | CPU: 1203ms
+QuoteSyncTest.rollsUpTotals249                       Pass  418ms
+  DEBUG|SOQL queries: 22 of 100 | DML: 11 of 150 | CPU: 925ms
+PricebookUtilTest.sendsEmail250                      Pass  203ms
+  DEBUG|SOQL queries: 1 of 100 | DML: 0 of 150 | CPU: 1277ms
+OpportunitySelectorTest.sendsEmail251                Pass  260ms
+  DEBUG|SOQL queries: 15 of 100 | DML: 19 of 150 | CPU: 1607ms
+OpportunitySelectorTest.handlesNull252               Pass  849ms
+  DEBUG|SOQL queries: 16 of 100 | DML: 12 of 150 | CPU: 229ms
+LeadServiceTest.handlesNull253                       Pass  387ms
+  DEBUG|SOQL queries: 14 of 100 | DML: 11 of 150 | CPU: 197ms
+OpportunitySelectorTest.mergesDuplicates254          Pass  542ms
+  DEBUG|SOQL queries: 22 of 100 | DML: 1 of 150 | CPU: 93ms
+CaseRouterTest.updatesOwner255                       Pass  771ms
+  DEBUG|SOQL queries: 11 of 100 | DML: 16 of 150 | CPU: 173ms
+AccountServiceTest.mergesDuplicates256               Pass  406ms
+  DEBUG|SOQL queries: 21 of 100 | DML: 4 of 150 | CPU: 62ms
+LeadServiceTest.validatesInput257                    Pass  769ms
+  DEBUG|SOQL queries: 23 of 100 | DML: 3 of 150 | CPU: 406ms
+CaseRouterTest.sendsEmail258                         Pass  314ms
+  DEBUG|SOQL queries: 26 of 100 | DML: 5 of 150 | CPU: 1415ms
+QuoteSyncTest.updatesOwner259                        Pass  873ms
+  DEBUG|SOQL queries: 12 of 100 | DML: 19 of 150 | CPU: 1558ms
+ContactMergeTest.handlesNull260                      Pass  351ms
+  DEBUG|SOQL queries: 29 of 100 | DML: 19 of 150 | CPU: 573ms
+OpportunitySelectorTest.handlesNull261               Pass  280ms
+  DEBUG|SOQL queries: 17 of 100 | DML: 15 of 150 | CPU: 436ms
+UserProvisionTest.runsAsStandardUser262              Pass  650ms
+  DEBUG|SOQL queries: 17 of 100 | DML: 7 of 150 | CPU: 663ms
+TerritoryAssignTest.insertsBulk263                   Pass  223ms
+  DEBUG|SOQL queries: 6 of 100 | DML: 12 of 150 | CPU: 340ms
+ContactMergeTest.skipsClosed264                      Pass  405ms
+  DEBUG|SOQL queries: 6 of 100 | DML: 8 of 150 | CPU: 245ms
+PricebookUtilTest.insertsBulk265                     Pass  671ms
+  DEBUG|SOQL queries: 28 of 100 | DML: 11 of 150 | CPU: 1988ms
+OpportunitySelectorTest.mergesDuplicates266          Pass  553ms
+  DEBUG|SOQL queries: 19 of 100 | DML: 3 of 150 | CPU: 526ms
+PricebookUtilTest.rollsUpTotals267                   Pass  775ms
+  DEBUG|SOQL queries: 26 of 100 | DML: 11 of 150 | CPU: 552ms
+InvoiceBatchTest.skipsClosed268                      Pass  611ms
+  DEBUG|SOQL queries: 5 of 100 | DML: 11 of 150 | CPU: 687ms
+LeadServiceTest.sendsEmail269                        Pass  255ms
+  DEBUG|SOQL queries: 6 of 100 | DML: 19 of 150 | CPU: 1532ms
+AccountServiceTest.runsAsStandardUser270             Pass  859ms
+  DEBUG|SOQL queries: 17 of 100 | DML: 8 of 150 | CPU: 645ms
+UserProvisionTest.skipsClosed271                     Pass  770ms
+  DEBUG|SOQL queries: 1 of 100 | DML: 1 of 150 | CPU: 463ms
+CaseRouterTest.runsAsStandardUser272                 Pass  650ms
+  DEBUG|SOQL queries: 21 of 100 | DML: 13 of 150 | CPU: 865ms
+PricebookUtilTest.skipsClosed273                     Pass  68ms
+  DEBUG|SOQL queries: 5 of 100 | DML: 15 of 150 | CPU: 475ms
+UserProvisionTest.insertsBulk274                     Pass  42ms
+  DEBUG|SOQL queries: 2 of 100 | DML: 0 of 150 | CPU: 1171ms
+TerritoryAssignTest.runsAsStandardUser275            Pass  128ms
+  DEBUG|SOQL queries: 17 of 100 | DML: 11 of 150 | CPU: 1103ms
+QuoteSyncTest.rollsUpTotals276                       Pass  617ms
+  DEBUG|SOQL queries: 10 of 100 | DML: 18 of 150 | CPU: 283ms
+QuoteSyncTest.skipsClosed277                         Pass  658ms
+  DEBUG|SOQL queries: 27 of 100 | DML: 15 of 150 | CPU: 334ms
+CaseRouterTest.insertsBulk278                        Pass  840ms
+  DEBUG|SOQL queries: 8 of 100 | DML: 4 of 150 | CPU: 933ms
+LeadServiceTest.updatesOwner279                      Pass  673ms
+  DEBUG|SOQL queries: 5 of 100 | DML: 8 of 150 | CPU: 833ms
+ContactMergeTest.insertsBulk280                      Pass  77ms
+  DEBUG|SOQL queries: 21 of 100 | DML: 17 of 150 | CPU: 1838ms
+TerritoryAssignTest.validatesInput281                Pass  681ms
+  DEBUG|SOQL queries: 19 of 100 | DML: 14 of 150 | CPU: 1242ms
+PricebookUtilTest.sendsEmail282                      Pass  274ms
+  DEBUG|SOQL queries: 6 of 100 | DML: 0 of 150 | CPU: 100ms
+AccountServiceTest.mergesDuplicates283               Pass  45ms
+  DEBUG|SOQL queries: 13 of 100 | DML: 5 of 150 | CPU: 496ms
+CaseRouterTest.insertsBulk284                        Pass  817ms
+  DEBUG|SOQL queries: 4 of 100 | DML: 0 of 150 | CPU: 1264ms
+PricebookUtilTest.respectsSharing285                 Pass  165ms
+  DEBUG|SOQL queries: 14 of 100 | DML: 6 of 150 | CPU: 1071ms
+UserProvisionTest.mergesDuplicates286                Pass  683ms
+  DEBUG|SOQL queries: 21 of 100 | DML: 13 of 150 | CPU: 1675ms
+UserProvisionTest.handlesNull287                     Pass  540ms
+  DEBUG|SOQL queries: 10 of 100 | DML: 2 of 150 | CPU: 624ms
+AccountServiceTest.sendsEmail288                     Pass  752ms
+  DEBUG|SOQL queries: 18 of 100 | DML: 0 of 150 | CPU: 778ms
+InvoiceBatchTest.sendsEmail289                       Pass  102ms
+  DEBUG|SOQL queries: 24 of 100 | DML: 20 of 150 | CPU: 936ms
+CaseRouterTest.respectsSharing290                    Pass  127ms
+  DEBUG|SOQL queries: 9 of 100 | DML: 7 of 150 | CPU: 1328ms
+AccountServiceTest.updatesOwner291                   Pass  363ms
+  DEBUG|SOQL queries: 29 of 100 | DML: 8 of 150 | CPU: 1467ms
+AccountServiceTest.runsAsStandardUser292             Pass  671ms
+  DEBUG|SOQL queries: 18 of 100 | DML: 13 of 150 | CPU: 1414ms
+PricebookUtilTest.runsAsStandardUser293              Pass  322ms
+  DEBUG|SOQL queries: 21 of 100 | DML: 6 of 150 | CPU: 184ms
+PricebookUtilTest.insertsBulk294                     Pass  193ms
+  DEBUG|SOQL queries: 9 of 100 | DML: 7 of 150 | CPU: 1733ms
+QuoteSyncTest.handlesNull295                         Pass  784ms
+  DEBUG|SOQL queries: 30 of 100 | DML: 10 of 150 | CPU: 403ms
+InvoiceBatchTest.skipsClosed296                      Pass  635ms
+  DEBUG|SOQL queries: 8 of 100 | DML: 12 of 150 | CPU: 1868ms
+PricebookUtilTest.sendsEmail297                      Pass  503ms
+  DEBUG|SOQL queries: 27 of 100 | DML: 16 of 150 | CPU: 1438ms
+AccountServiceTest.insertsBulk298                    Pass  467ms
+  DEBUG|SOQL queries: 24 of 100 | DML: 7 of 150 | CPU: 1178ms
+ContactMergeTest.respectsSharing299                  Pass  420ms
+  DEBUG|SOQL queries: 20 of 100 | DML: 18 of 150 | CPU: 169ms
+UserProvisionTest.handlesNull300                     Pass  168ms
+  DEBUG|SOQL queries: 2 of 100 | DML: 0 of 150 | CPU: 239ms
+LeadServiceTest.validatesInput301                    Pass  185ms
+  DEBUG|SOQL queries: 12 of 100 | DML: 4 of 150 | CPU: 1445ms
+AccountServiceTest.insertsBulk302                    Pass  62ms
+  DEBUG|SOQL queries: 5 of 100 | DML: 20 of 150 | CPU: 1308ms
+AccountServiceTest.updatesOwner303                   Pass  774ms
+  DEBUG|SOQL queries: 2 of 100 | DML: 2 of 150 | CPU: 1764ms
+UserProvisionTest.skipsClosed304                     Pass  224ms
+  DEBUG|SOQL queries: 27 of 100 | DML: 17 of 150 | CPU: 1835ms
+LeadServiceTest.rollsUpTotals305                     Pass  129ms
+  DEBUG|SOQL queries: 8 of 100 | DML: 6 of 150 | CPU: 426ms
+LeadServiceTest.insertsBulk306                       Pass  55ms
+  DEBUG|SOQL queries: 28 of 100 | DML: 20 of 150 | CPU: 189ms
+ContactMergeTest.sendsEmail307                       Pass  122ms
+  DEBUG|SOQL queries: 5 of 100 | DML: 3 of 150 | CPU: 1631ms
+QuoteSyncTest.runsAsStandardUser308                  Pass  346ms
+  DEBUG|SOQL queries: 11 of 100 | DML: 13 of 150 | CPU: 544ms
+AccountServiceTest.skipsClosed309                    Pass  282ms
+  DEBUG|SOQL queries: 30 of 100 | DML: 9 of 150 | CPU: 109ms
+TerritoryAssignTest.skipsClosed310                   Pass  807ms
+  DEBUG|SOQL queries: 20 of 100 | DML: 16 of 150 | CPU: 985ms
+ContactMergeTest.validatesInput311                   Pass  783ms
+  DEBUG|SOQL queries: 1 of 100 | DML: 13 of 150 | CPU: 73ms
+InvoiceBatchTest.mergesDuplicates312                 Pass  811ms
+  DEBUG|SOQL queries: 4 of 100 | DML: 11 of 150 | CPU: 970ms
+AccountServiceTest.mergesDuplicates313               Pass  599ms
+  DEBUG|SOQL queries: 7 of 100 | DML: 2 of 150 | CPU: 1186ms
+ContactMergeTest.handlesNull314                      Pass  466ms
+  DEBUG|SOQL queries: 1 of 100 | DML: 16 of 150 | CPU: 423ms
+ContactMergeTest.insertsBulk315                      Pass  24ms
+  DEBUG|SOQL queries: 12 of 100 | DML: 15 of 150 | CPU: 205ms
+OpportunitySelectorTest.handlesNull316               Pass  526ms
+  DEBUG|SOQL queries: 19 of 100 | DML: 11 of 150 | CPU: 1970ms
+PricebookUtilTest.runsAsStandardUser317              Pass  611ms
+  DEBUG|SOQL queries: 6 of 100 | DML: 9 of 150 | CPU: 1679ms
+QuoteSyncTest.respectsSharing318                     Pass  530ms
+  DEBUG|SOQL queries: 6 of 100 | DML: 3 of 150 | CPU: 1932ms
+LeadServiceTest.sendsEmail319                        Pass  826ms
+  DEBUG|SOQL queries: 23 of 100 | DML: 17 of 150 | CPU: 1621ms
+LeadServiceTest.skipsClosed320                       Pass  384ms
+  DEBUG|SOQL queries: 4 of 100 | DML: 12 of 150 | CPU: 1911ms
+InvoiceBatchTest.updatesOwner321                     Pass  452ms
+  DEBUG|SOQL queries: 29 of 100 | DML: 20 of 150 | CPU: 61ms
+TerritoryAssignTest.respectsSharing322               Pass  330ms
+  DEBUG|SOQL queries: 9 of 100 | DML: 13 of 150 | CPU: 1855ms
+PricebookUtilTest.mergesDuplicates323                Pass  195ms
+  DEBUG|SOQL queries: 13 of 100 | DML: 20 of 150 | CPU: 488ms
+OpportunitySelectorTest.handlesNull324               Pass  564ms
+  DEBUG|SOQL queries: 20 of 100 | DML: 19 of 150 | CPU: 1333ms
+AccountServiceTest.skipsClosed325                    Pass  615ms
+  DEBUG|SOQL queries: 11 of 100 | DML: 16 of 150 | CPU: 328ms
+OpportunitySelectorTest.mergesDuplicates326          Pass  779ms
+  DEBUG|SOQL queries: 11 of 100 | DML: 5 of 150 | CPU: 958ms
+OpportunitySelectorTest.runsAsStandardUser327        Pass  613ms
+  DEBUG|SOQL queries: 8 of 100 | DML: 4 of 150 | CPU: 694ms
+OpportunitySelectorTest.respectsSharing328           Pass  539ms
+  DEBUG|SOQL queries: 7 of 100 | DML: 8 of 150 | CPU: 627ms
+UserProvisionTest.handlesNull329                     Pass  760ms
+  DEBUG|SOQL queries: 5 of 100 | DML: 7 of 150 | CPU: 1491ms
+TerritoryAssignTest.validatesInput330                Pass  554ms
+  DEBUG|SOQL queries: 12 of 100 | DML: 5 of 150 | CPU: 493ms
+TerritoryAssignTest.respectsSharing331               Pass  284ms
+  DEBUG|SOQL queries: 24 of 100 | DML: 3 of 150 | CPU: 347ms
+LeadServiceTest.respectsSharing332                   Pass  413ms
+  DEBUG|SOQL queries: 5 of 100 | DML: 4 of 150 | CPU: 1637ms
+ContactMergeTest.runsAsStandardUser333               Pass  465ms
+  DEBUG|SOQL queries: 9 of 100 | DML: 6 of 150 | CPU: 233ms
+LeadServiceTest.runsAsStandardUser334                Pass  231ms
+  DEBUG|SOQL queries: 29 of 100 | DML: 12 of 150 | CPU: 960ms
+AccountServiceTest.insertsBulk335                    Pass  428ms
+  DEBUG|SOQL queries: 28 of 100 | DML: 13 of 150 | CPU: 1430ms
+QuoteSyncTest.mergesDuplicates336                    Pass  667ms
+  DEBUG|SOQL queries: 10 of 100 | DML: 14 of 150 | CPU: 55ms
+CaseRouterTest.runsAsStandardUser337                 Pass  638ms
+  DEBUG|SOQL queries: 24 of 100 | DML: 12 of 150 | CPU: 21ms
+QuoteSyncTest.rollsUpTotals338                       Pass  737ms
+  DEBUG|SOQL queries: 19 of 100 | DML: 18 of 150 | CPU: 1544ms
+InvoiceBatchTest.respectsSharing339                  Pass  703ms
+  DEBUG|SOQL queries: 24 of 100 | DML: 20 of 150 | CPU: 1812ms
+UserProvisionTest.respectsSharing340                 Pass  715ms
+  DEBUG|SOQL queries: 6 of 100 | DML: 20 of 150 | CPU: 264ms
+OpportunitySelectorTest.rollsUpTotals341             Pass  340ms
+  DEBUG|SOQL queries: 9 of 100 | DML: 20 of 150 | CPU: 1444ms
+LeadServiceTest.rollsUpTotals342                     Pass  268ms
+  DEBUG|SOQL queries: 26 of 100 | DML: 12 of 150 | CPU: 1470ms
+CaseRouterTest.runsAsStandardUser343                 Pass  889ms
+  DEBUG|SOQL queries: 14 of 100 | DML: 15 of 150 | CPU: 942ms
+AccountServiceTest.validatesInput344                 Pass  899ms
+  DEBUG|SOQL queries: 14 of 100 | DML: 16 of 150 | CPU: 1392ms
+CaseRouterTest.skipsClosed345                        Pass  816ms
+  DEBUG|SOQL queries: 1 of 100 | DML: 12 of 150 | CPU: 1713ms
+OpportunitySelectorTest.updatesOwner346              Pass  59ms
+  DEBUG|SOQL queries: 9 of 100 | DML: 17 of 150 | CPU: 456ms
+CaseRouterTest.respectsSharing347                    Pass  551ms
+  DEBUG|SOQL queries: 12 of 100 | DML: 3 of 150 | CPU: 1744ms
+UserProvisionTest.sendsEmail348                      Pass  574ms
+  DEBUG|SOQL queries: 7 of 100 | DML: 15 of 150 | CPU: 1058ms
+AccountServiceTest.skipsClosed349                    Pass  554ms
+  DEBUG|SOQL queries: 11 of 100 | DML: 13 of 150 | CPU: 1529ms
+OpportunitySelectorTest.respectsSharing350           Pass  720ms
+  DEBUG|SOQL queries: 6 of 100 | DML: 12 of 150 | CPU: 1062ms
+LeadServiceTest.validatesInput351                    Pass  384ms
+  DEBUG|SOQL queries: 21 of 100 | DML: 1 of 150 | CPU: 527ms
+ContactMergeTest.rollsUpTotals352                    Pass  429ms
+  DEBUG|SOQL queries: 2 of 100 | DML: 0 of 150 | CPU: 163ms
+InvoiceBatchTest.rollsUpTotals353                    Pass  663ms
+  DEBUG|SOQL queries: 23 of 100 | DML: 11 of 150 | CPU: 1198ms
+ContactMergeTest.updatesOwner354                     Pass  249ms
+  DEBUG|SOQL queries: 10 of 100 | DML: 12 of 150 | CPU: 1934ms
+PricebookUtilTest.respectsSharing355                 Pass  840ms
+  DEBUG|SOQL queries: 13 of 100 | DML: 14 of 150 | CPU: 444ms
+CaseRouterTest.handlesNull356                        Pass  815ms
+  DEBUG|SOQL queries: 3 of 100 | DML: 20 of 150 | CPU: 405ms
+OpportunitySelectorTest.mergesDuplicates357          Pass  758ms
+  DEBUG|SOQL queries: 8 of 100 | DML: 4 of 150 | CPU: 733ms
+InvoiceBatchTest.sendsEmail358                       Pass  321ms
+  DEBUG|SOQL queries: 25 of 100 | DML: 17 of 150 | CPU: 1340ms
+CaseRouterTest.sendsEmail359                         Pass  383ms
+  DEBUG|SOQL queries: 26 of 100 | DML: 7 of 150 | CPU: 557ms
+InvoiceBatchTest.runsAsStandardUser360               Pass  456ms
+  DEBUG|SOQL queries: 22 of 100 | DML: 5 of 150 | CPU: 996ms
+AccountServiceTest.runsAsStandardUser361             Pass  386ms
+  DEBUG|SOQL queries: 8 of 100 | DML: 20 of 150 | CPU: 628ms
+TerritoryAssignTest.sendsEmail362                    Pass  516ms
+  DEBUG|SOQL queries: 14 of 100 | DML: 19 of 150 | CPU: 1315ms
+LeadServiceTest.skipsClosed363                       Pass  176ms
+  DEBUG|SOQL queries: 30 of 100 | DML: 9 of 150 | CPU: 1759ms
+InvoiceBatchTest.insertsBulk364                      Pass  107ms
+  DEBUG|SOQL queries: 27 of 100 | DML: 18 of 150 | CPU: 1865ms
+TerritoryAssignTest.handlesNull365                   Pass  563ms
+  DEBUG|SOQL queries: 27 of 100 | DML: 11 of 150 | CPU: 1306ms
+UserProvisionTest.insertsBulk366                     Pass  693ms
+  DEBUG|SOQL queries: 1 of 100 | DML: 6 of 150 | CPU: 1959ms
+LeadServiceTest.runsAsStandardUser367                Pass  276ms
+  DEBUG|SOQL queries: 20 of 100 | DML: 3 of 150 | CPU: 1194ms
+CaseRouterTest.respectsSharing368                    Pass  210ms
+  DEBUG|SOQL queries: 25 of 100 | DML: 14 of 150 | CPU: 719ms
+CaseRouterTest.respectsSharing369                    Pass  432ms
+  DEBUG|SOQL queries: 26 of 100 | DML: 17 of 150 | CPU: 353ms
+UserProvisionTest.validatesInput370                  Pass  820ms
+  DEBUG|SOQL queries: 3 of 100 | DML: 17 of 150 | CPU: 1623ms
+ContactMergeTest.respectsSharing371                  Pass  526ms
+  DEBUG|SOQL queries: 23 of 100 | DML: 6 of 150 | CPU: 1097ms
+LeadServiceTest.sendsEmail372                        Pass  707ms
+  DEBUG|SOQL queries: 29 of 100 | DML: 3 of 150 | CPU: 1146ms
+LeadServiceTest.runsAsStandardUser373                Pass  449ms
+  DEBUG|SOQL queries: 8 of 100 | DML: 4 of 150 | CPU: 979ms
+OpportunitySelectorTest.mergesDuplicates374          Pass  79ms
+  DEBUG|SOQL queries: 16 of 100 | DML: 14 of 150 | CPU: 1864ms
+CaseRouterTest.sendsEmail375                         Pass  272ms
+  DEBUG|SOQL queries: 16 of 100 | DML: 5 of 150 | CPU: 1114ms
+UserProvisionTest.insertsBulk376                     Pass  184ms
+  DEBUG|SOQL queries: 27 of 100 | DML: 10 of 150 | CPU: 968ms
+UserProvisionTest.sendsEmail377                      Pass  701ms
+  DEBUG|SOQL queries: 10 of 100 | DML: 14 of 150 | CPU: 777ms
+InvoiceBatchTest.rollsUpTotals378                    Pass  712ms
+  DEBUG|SOQL queries: 3 of 100 | DML: 5 of 150 | CPU: 1314ms
+TerritoryAssignTest.insertsBulk379                   Pass  41ms
+  DEBUG|SOQL queries: 20 of 100 | DML: 1 of 150 | CPU: 1407ms
+TerritoryAssignTest.updatesOwner380                  Pass  542ms
+  DEBUG|SOQL queries: 16 of 100 | DML: 15 of 150 | CPU: 1560ms
+CaseRouterTest.insertsBulk381                        Pass  238ms
+  DEBUG|SOQL queries: 23 of 100 | DML: 13 of 150 | CPU: 1290ms
+CaseRouterTest.skipsClosed382                        Pass  116ms
+  DEBUG|SOQL queries: 28 of 100 | DML: 11 of 150 | CPU: 709ms
+OpportunitySelectorTest.mergesDuplicates383          Pass  587ms
+  DEBUG|SOQL queries: 25 of 100 | DML: 6 of 150 | CPU: 591ms
+InvoiceBatchTest.skipsClosed384                      Pass  452ms
+  DEBUG|SOQL queries: 9 of 100 | DML: 17 of 150 | CPU: 117ms
+ContactMergeTest.runsAsStandardUser385               Pass  383ms
+  DEBUG|SOQL queries: 27 of 100 | DML: 15 of 150 | CPU: 836ms
+TerritoryAssignTest.mergesDuplicates386              Pass  298ms
+  DEBUG|SOQL queries: 28 of 100 | DML: 16 of 150 | CPU: 716ms
+QuoteSyncTest.sendsEmail387                          Pass  830ms
+  DEBUG|SOQL queries: 4 of 100 | DML: 10 of 150 | CPU: 403ms
+TerritoryAssignTest.runsAsStandardUser388            Pass  150ms
+  DEBUG|SOQL queries: 19 of 100 | DML: 20 of 150 | CPU: 189ms
+AccountServiceTest.rollsUpTotals389                  Pass  760ms
+  DEBUG|SOQL queries: 18 of 100 | DML: 12 of 150 | CPU: 1126ms
+UserProvisionTest.insertsBulk390                     Pass  428ms
+  DEBUG|SOQL queries: 10 of 100 | DML: 3 of 150 | CPU: 22ms
+AccountServiceTest.respectsSharing391                Pass  861ms
+  DEBUG|SOQL queries: 30 of 100 | DML: 15 of 150 | CPU: 1256ms
+AccountServiceTest.mergesDuplicates392               Pass  576ms
+  DEBUG|SOQL queries: 20 of 100 | DML: 12 of 150 | CPU: 1272ms
+CaseRouterTest.validatesInput393                     Pass  717ms
+  DEBUG|SOQL queries: 3 of 100 | DML: 6 of 150 | CPU: 90ms
+OpportunitySelectorTest.handlesNull394               Pass  123ms
+  DEBUG|SOQL queries: 22 of 100 | DML: 5 of 150 | CPU: 1790ms
+AccountServiceTest.rollsUpTotals395                  Pass  813ms
+  DEBUG|SOQL queries: 4 of 100 | DML: 20 of 150 | CPU: 37ms
+TerritoryAssignTest.handlesNull396                   Pass  825ms
+  DEBUG|SOQL queries: 10 of 100 | DML: 17 of 150 | CPU: 1464ms
+ContactMergeTest.runsAsStandardUser397               Pass  209ms
+  DEBUG|SOQL queries: 14 of 100 | DML: 1 of 150 | CPU: 662ms
+AccountServiceTest.rollsUpTotals398                  Pass  599ms
+  DEBUG|SOQL queries: 21 of 100 | DML: 18 of 150 | CPU: 1922ms
+AccountServiceTest.sendsEmail399                     Pass  601ms
+  DEBUG|SOQL queries: 17 of 100 | DML: 1 of 150 | CPU: 1699ms
+
+=== Test Summary
+Outcome: Failed
+Tests Ran: 400
+Pass Rate: 99%
+Fail Rate: 1%
+Failing: OpportunityServiceTest.bulkClose, OpportunityServiceTest.expireStaleClosesAll
+Org Wide Coverage: 81%

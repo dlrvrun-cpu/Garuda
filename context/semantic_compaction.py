@@ -141,4 +141,5 @@ def main():
     show("LEVEL 3: compress further, keep only the last block", level3)
 
 
-main()
+if __name__ == "__main__":
+    main()
