@@ -1,0 +1,14 @@
+diff --git a/force-app/main/default/classes/OpportunityService.cls b/force-app/main/default/classes/OpportunityService.cls
+--- a/force-app/main/default/classes/OpportunityService.cls
++++ b/force-app/main/default/classes/OpportunityService.cls
+@@ -17,6 +17,10 @@ public static void closeLostOpportunities(List<Opportunity> opps) {
+         isRunning = true;
+         for (Opportunity o : opps) {
+             o.StageName = 'Closed Lost';
+             o.CloseDate = Date.today();
++            Account a = [SELECT Id, Lost_Count__c FROM Account
++                         WHERE Id = :o.AccountId];
++            a.Lost_Count__c = a.Lost_Count__c + 1;
++            update a;
+         }
+         update opps;

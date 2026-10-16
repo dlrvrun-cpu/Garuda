@@ -1,0 +1,57 @@
+# Earlier Garuda review rounds on this PR (same format as ../conversation.txt).
+# Lines starting with RESULT:, DECISION: or OPEN: survive compaction. CLOSED: removes an OPEN item.
+
+=== Turns 1-6
+Garuda read the diff of OpportunityService.cls and the PR description.
+Garuda called read_context on OpportunityService.cls (full file, 92 lines) to check sharing and the recursion guard.
+Tool output (OpportunityService.cls):
+    public with sharing class OpportunityService {
+        public static Boolean isRunning = false;
+        public static void closeLostOpportunities(List<Opportunity> opps) {
+            if (isRunning) { return; }
+            isRunning = true;
+            for (Opportunity o : opps) {
+                o.StageName = 'Closed Lost';
+                o.CloseDate = Date.today();
+                Account a = [SELECT Id, Lost_Count__c FROM Account WHERE Id = :o.AccountId];
+                a.Lost_Count__c = a.Lost_Count__c + 1;
+                update a;
+            }
+            update opps;
+            isRunning = false;
+        }
+        public static void markWon(List<Opportunity> opps) { ... one query, Map, two updates ... }
+        public static void reopen(List<Opportunity> opps, String stage) { ... }
+        public static Integer expireStale() { ... }
+        public static Decimal openPipeline(Id accountId) { ... }
+    }
+The class is declared with sharing. isRunning guards recursion from the trigger handler.
+markWon in the same class already does this the right way: one query through OpportunitySelector, a Map, one update.
+Garuda called search_context on the CI log for FAIL. Two failures, both in OpportunityServiceTest.
+Tool output: OpportunityServiceTest.bulkClose Fail 3,921ms System.LimitException: Too many SOQL queries: 101 ...
+Tool output: OpportunityServiceTest.expireStaleClosesAll Fail 3,604ms System.LimitException ...
+Tool output: 398 other tests passed. Slowest: InvoiceBatchTest.rollsUpTotals 1,960ms, TerritoryAssignTest.insertsBulk 1,712ms.
+RESULT: SOQL query inside the for loop at OpportunityService.cls line 21.
+RESULT: DML (update a) inside the same loop at line 24.
+RESULT: markWon in the same class is the pattern to copy.
+RESULT: CI failed: bulkClose and expireStaleClosesAll, Too many SOQL queries: 101.
+OPEN: SOQL in loop
+OPEN: DML in loop
+
+=== Turns 7-12
+Developer replied: "It works in my sandbox with 5 records, can we merge and fix later?"
+Garuda explained that OpportunityBatch runs with scope 200, so production will hit 101 queries on the first chunk.
+Garuda pasted the suggested fix, modelled on markWon:
+    Set<Id> accountIds = new Set<Id>();
+    for (Opportunity o : opps) { o.StageName = 'Closed Lost'; accountIds.add(o.AccountId); }
+    Map<Id, Account> accounts = OpportunitySelector.selectAccountsWithCounts(accountIds);
+    for (Opportunity o : opps) {
+        Account a = accounts.get(o.AccountId);
+        if (a != null) { a.Lost_Count__c = (a.Lost_Count__c == null ? 0 : a.Lost_Count__c) + 1; }
+    }
+    update opps;
+    update accounts.values();
+Developer: "OK, makes sense. Also do we need a null check on Lost_Count__c?"
+Garuda checked Lost_Count__c.field-meta.xml: defaultValue is 0, but old records can still be null.
+DECISION: Developer agreed to bulkify with a Set and a Map, using OpportunitySelector.
+DECISION: Treat a null Lost_Count__c as 0.
