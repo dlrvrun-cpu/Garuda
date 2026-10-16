@@ -1,0 +1,36 @@
+# A long Garuda review of the OpportunityService.cls PR.
+# Each block starts with:  === Turns 1-10 | 30000
+# (the label, then how many tokens the block takes; leave the number out to estimate it)
+# Lines starting with RESULT:, DECISION: or OPEN: are what a summary keeps.
+# A line starting with CLOSED: removes a matching OPEN item.
+# Everything else (raw logs, file dumps, chatter) gets dropped when a block is summarized.
+
+=== Turns 1-10 | 30000
+Garuda read the diff of OpportunityService.cls.
+Garuda ran the CI tool. Raw log: 2,400 lines of test output...
+RESULT: SOQL query inside the loop in closeLostOpportunities.
+RESULT: DML (update a) inside the same loop.
+OPEN: SOQL in loop
+OPEN: DML in loop
+
+=== Turns 11-20 | 40000
+Full CI log pasted: OpportunityServiceTest.bulkClose ... stack trace ...
+RESULT: CI failed: bulkClose, Too many SOQL queries: 101.
+Garuda explained how to bulkify with one query and a Map.
+DECISION: Dev agreed to bulkify.
+
+=== Turns 21-30 | 50000
+Dev pushed v2. Full file dump of OpportunityService.cls (1,600 tokens)...
+RESULT: v2 fixed the SOQL with one query and a Map.
+CLOSED: SOQL in loop
+RESULT: DML is still inside the loop. Flagged again.
+
+=== Turns 31-40 | 40000
+Dev pushed v3. Another full file dump...
+RESULT: v3 moved the DML out of the loop. bulkClose passes now.
+CLOSED: DML in loop
+RESULT: OpportunityBatch.cls:42 checked, no change needed.
+
+=== Turns 41-50 | 30000
+Garuda is now doing a final pass on sharing and the recursion guard.
+Is the class declared with sharing? Checking OpportunityService.cls line 1...
