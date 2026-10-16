@@ -1,0 +1,8 @@
+Validation deploy to UAT: FAILED (1 test failure)
+
+OpportunityTriggerTest.bulkUpdate
+  System.LimitException: Too many SOQL queries: 101
+  Class.DiscountService.recalc: line 4, column 1
+  Class.OpportunityTriggerHandler.beforeUpdate: line 21, column 1
+  Class.TriggerHandler.run: line 10, column 1
+  Trigger.OpportunityTrigger: line 2, column 1
