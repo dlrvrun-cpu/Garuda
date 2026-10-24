@@ -7,6 +7,7 @@
 # Reasoning:  Claude reviews, and calls read_context / search_context when it needs more.
 # Action:     a JSON review, plus the context trace that explains what Garuda saw.
 
+import os
 import sys
 import json
 import logging
@@ -21,7 +22,7 @@ Respond with JSON only: {"summary": "...", "comments": [
 ]}"""
 
 
-def review_pr(pr_dir, window=10000, client=None):
+def review_pr(pr_dir, window=10000, client=None, extra_system=""):
     client = client or anthropic.Anthropic()
     session = ContextSession(pr_dir, window)
     msgs = session.messages()
@@ -29,9 +30,9 @@ def review_pr(pr_dir, window=10000, client=None):
 
     for _ in range(MAX_TOOL_ROUNDS + 1):
         response = client.messages.create(
-            model="claude-sonnet-5-5",
+            model=os.environ.get("GARUDA_MODEL", "claude-sonnet-5-5"),
             max_tokens=4096,
-            system=msgs["system"] + "\n" + OUTPUT_FORMAT,
+            system=msgs["system"] + "\n" + extra_system + "\n" + OUTPUT_FORMAT,
             tools=TOOLS,
             messages=messages,
         )
