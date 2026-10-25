@@ -137,10 +137,10 @@ class LearnTest(unittest.TestCase):
         return {"id": 11, "line": 21, "body": "x\n" + g.MARKER + json.dumps(meta) + " -->",
                 "html_url": "https://github.com/o/r/pull/7#discussion_r11", "user": {"login": "garuda[bot]"}}
 
-    def dismiss(self, who="COLLABORATOR"):
+    def dismiss(self, who="COLLABORATOR", body="/garuda dismiss It's a standard picklist value"):
         event = pr_event()
         event["comment"] = {"id": 12, "in_reply_to_id": 11, "author_association": who, "user": {"login": "varun"},
-                            "body": "/garuda dismiss It's a standard picklist value"}
+                            "body": body}
         return event
 
     def test_dismiss_writes_memory_and_ledger(self):
@@ -151,6 +151,12 @@ class LearnTest(unittest.TestCase):
         episode = json.loads(gh.store[g.EPISODES_PATH].strip())
         self.assertEqual(episode["label"], "dismissed")
         self.assertIn("It's a standard picklist value", episode["fix"])
+
+    def test_dismiss_keeps_only_the_first_paragraph(self):
+        gh = FakeGitHub(comments=[self.finding()])
+        g.cmd_learn(gh, self.dismiss(body="/garuda dismiss It's a standard picklist value\n\n---\n_Sent from a bot_"))
+        self.assertNotIn("Sent from a bot", gh.store[g.DISMISSED_PATH])
+        self.assertNotIn("Sent from a bot", gh.store[g.EPISODES_PATH])
 
     def test_strangers_cannot_change_memory(self):
         gh = FakeGitHub(comments=[self.finding()])

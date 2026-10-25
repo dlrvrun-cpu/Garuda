@@ -313,7 +313,8 @@ def cmd_permit(gh, event):
 
 def cmd_learn(gh, event):
     comment, pr = event["comment"], event["pull_request"]
-    reason = comment["body"].strip()[len("/garuda dismiss"):].strip() or "no reason given"
+    # Keep the first paragraph only, so footers or signatures added to the comment stay out of memory.
+    reason = comment["body"].strip()[len("/garuda dismiss"):].strip().split("\n\n")[0].strip() or "no reason given"
     reply_to = comment.get("in_reply_to_id")
 
     def reply(text):
