@@ -6,14 +6,14 @@ The context engine from `context/`, wired to real pull requests as a GitHub Acti
 |---|---|---|
 | `review` | `pull_request` | Lays the PR out for the context engine (diff, description, earlier rounds, the checked-out repo), runs `review_agent.review_pr`, and posts one review with inline comments |
 | `permit` | `pull_request` | Reads the ```intent block in the PR description and fails if the PR touches files outside `permit.paths` |
-| `learn` | `pull_request_review_comment` | On a reply `/garuda dismiss <why>` to one of Garuda's comments, commits the lesson to `.garuda/memory/dismissed-findings.md` and `.garuda/memory/_log.jsonl` on the PR branch |
+| `learn` | `pull_request_review_comment` | On a reply `/garuda dismiss <why>` to one of Garuda's comments, commits the lesson to `.garuda/memory/dismissed-findings.md` and `.garuda/memory/episodes.jsonl` on the PR branch |
 
 Use it from any Salesforce repo: copy [`examples/garuda.yml`](../examples/garuda.yml) to `.github/workflows/` and add an `ANTHROPIC_API_KEY` secret.
 
 ## How memory works
 
 - **Working memory:** the context window for one review. Built fresh each run.
-- **Episodic memory:** earlier Garuda rounds on the same PR are turned into `review-history.txt`, so semantic compaction keeps the results and decisions. Dismissals are saved to `dismissed-findings.md`.
+- **Episodic memory:** earlier Garuda rounds on the same PR are turned into `review-history.txt`, so semantic compaction keeps the results and decisions. Past failures, fixes and dismissals live in `episodes.jsonl`, and `memory/garuda_memory.py` recalls the ones that match the PR by file and by failure label.
 - **Semantic memory:** `repo-conventions.md`, written by people.
 - **Intent:** the ```intent block (schema `soi/v0`: goal, must_hold, permit). The review is checked against it, and `permit` enforces it.
 

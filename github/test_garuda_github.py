@@ -99,6 +99,19 @@ class ReviewTest(unittest.TestCase):
         self.assertIn("couldn't pin", payload["body"])
         self.assertIn("What I remembered", payload["body"])
 
+    def test_past_failures_are_recalled_into_the_prompt(self):
+        import shutil, tempfile
+        ws = os.path.join(tempfile.mkdtemp(), "repo")
+        shutil.copytree(os.path.join(SAMPLE, "repo"), ws)
+        shutil.copy(os.path.join(HERE, "..", "memory", "episodes.jsonl"), os.path.join(ws, g.EPISODES_PATH))
+        os.environ["GITHUB_WORKSPACE"] = ws
+        claude = FakeClaude({"summary": "ok", "comments": []})
+        g.cmd_review(FakeGitHub(), pr_event(), client=claude)
+        prompt = claude.seen[0]["messages"][0]["content"]
+        self.assertIn("What happened before (episodic memory)", prompt)
+        self.assertIn("Too many SOQL queries: 101", prompt)       # PR #198, same mistake in another file
+        self.assertNotIn("CaseRouter", prompt.split("What happened before")[1])
+
     def test_missing_intent_asks_for_one(self):
         claude = FakeClaude({"summary": "ok", "comments": []})
         payload = g.cmd_review(FakeGitHub(), pr_event(body="no intent here"), client=claude)
@@ -135,9 +148,9 @@ class LearnTest(unittest.TestCase):
         g.cmd_learn(gh, self.dismiss())
         memory = gh.store[g.DISMISSED_PATH]
         self.assertIn('"Use a custom label for Closed Lost" was dismissed on PR #7 by @varun', memory)
-        record = json.loads(gh.store[g.LEDGER_PATH].strip())
-        self.assertEqual(record["event"], "dismissed")
-        self.assertEqual(record["reason"], "It's a standard picklist value")
+        episode = json.loads(gh.store[g.EPISODES_PATH].strip())
+        self.assertEqual(episode["label"], "dismissed")
+        self.assertIn("It's a standard picklist value", episode["fix"])
 
     def test_strangers_cannot_change_memory(self):
         gh = FakeGitHub(comments=[self.finding()])
