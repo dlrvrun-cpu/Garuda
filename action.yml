@@ -1,0 +1,38 @@
+name: Garuda
+description: A Salesforce PR review agent with context engineering and memory that lives in your repo.
+branding:
+  icon: eye
+  color: orange
+inputs:
+  mode:
+    description: "review (post a review), permit (check files against the PR's intent) or learn (save a /garuda dismiss)"
+    default: review
+  anthropic-api-key:
+    description: Needed for review
+    default: ""
+  github-token:
+    default: ${{ github.token }}
+  model:
+    default: claude-sonnet-5-5
+  window:
+    description: Context window budget in tokens for the context engine
+    default: "10000"
+  ci-log:
+    description: Optional path to a test run log, so Garuda can read the failures
+    default: ""
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-python@v5
+      with:
+        python-version: "3.12"
+    - shell: bash
+      run: pip install -q -r "${{ github.action_path }}/github/requirements.txt"
+    - shell: bash
+      env:
+        GITHUB_TOKEN: ${{ inputs.github-token }}
+        ANTHROPIC_API_KEY: ${{ inputs.anthropic-api-key }}
+        GARUDA_MODEL: ${{ inputs.model }}
+        GARUDA_WINDOW: ${{ inputs.window }}
+        GARUDA_CI_LOG: ${{ inputs.ci-log }}
+      run: python "${{ github.action_path }}/github/garuda_github.py" "${{ inputs.mode }}"
