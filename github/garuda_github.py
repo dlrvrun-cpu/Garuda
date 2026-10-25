@@ -10,7 +10,7 @@
 # Memory lives in the repo, so you can read it, review it and revert it like code:
 #   .garuda/memory/repo-conventions.md     semantic: facts about this repo
 #   .garuda/memory/dismissed-findings.md   episodic: what people told Garuda not to say again
-#   .garuda/memory/_log.jsonl              the ledger: one line per thing Garuda learned
+#   .garuda/memory/episodes.jsonl          episodic: what happened on past PRs (failures, fixes, dismissals)
 
 import os
 import re
@@ -27,18 +27,22 @@ import urllib.error
 import yaml
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "context"))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "memory"))
+
+import garuda_memory
 
 logger = logging.getLogger("garuda.github")
 
 MARKER = "<!-- garuda:finding "
 DISMISSED_PATH = ".garuda/memory/dismissed-findings.md"
-LEDGER_PATH = ".garuda/memory/_log.jsonl"
+EPISODES_PATH = ".garuda/memory/episodes.jsonl"
 TRUSTED = ("OWNER", "MEMBER", "COLLABORATOR")
 
 REVIEW_INSTRUCTIONS = """
 Memory rules:
 - Never raise a finding that matches an entry in "Dismissed findings". People already said no.
 - Follow "repo-conventions.md". When a finding breaks a convention, say which one.
+- If "What happened before" lists a past failure like this one, say so and point to the fix that worked.
 - If the PR description has an intent block, check the change against its goal and must_hold rules.
 Extra JSON fields: give every comment a short "title" (under 8 words), and add a top-level
 "remembered": ["<memory entry> -> <what you did differently because of it>", ...]."""
@@ -178,6 +182,16 @@ def history_text(review_comments):
 # review
 # ---------------------------------------------------------------------------
 
+def recall_episodes(workspace, diff):
+    path = os.path.join(workspace, EPISODES_PATH)
+    if not os.path.exists(path):
+        return []
+    files = garuda_memory.changed_files(diff)
+    recalled = garuda_memory.recall(garuda_memory.load_episodes(path), files, garuda_memory.labels_in(diff))
+    logger.info("Recalled %d episode(s) for %s", len(recalled), ", ".join(files))
+    return recalled
+
+
 def build_pr_dir(gh, pr, files, workspace):
     """Lay the PR out the way the context engine expects: pr.diff, pr.md, review-history.txt, repo/."""
     pr_dir = tempfile.mkdtemp(prefix="garuda-")
@@ -192,6 +206,11 @@ def build_pr_dir(gh, pr, files, workspace):
         if added and item["filename"].endswith((".cls", ".trigger")):
             numbered.append("Lines added in " + item["filename"] + " (new line numbers):")
             numbered += [str(n) + ": " + text for n, text in sorted(added.items())]
+    # Episodic memory: the PR is the cue. Recall past episodes by file, then by failure label.
+    recalled = recall_episodes(workspace, diff)
+    if recalled:
+        numbered += ["", "What happened before (episodic memory):"]
+        numbered += ["- " + garuda_memory.episode_text(e) for e in recalled]
     with open(os.path.join(pr_dir, "pr.md"), "w") as f:
         f.write("# " + pr["title"] + "\n" + (pr.get("body") or "") + "\n\n" + "\n".join(numbered))
 
@@ -321,12 +340,14 @@ def cmd_learn(gh, event):
     text = (text or "# Dismissed findings (Garuda memory)\n").rstrip("\n") + "\n" + entry + "\n"
     commit = gh.write_file(DISMISSED_PATH, branch, text, sha, "garuda: remember dismissed finding on PR #" + str(pr["number"]))
 
-    ledger, ledger_sha = gh.read_file(LEDGER_PATH, branch)
-    record = {"ts": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
-              "event": "dismissed", "pr": pr["number"], "file": meta["file"], "finding": meta["title"],
-              "reason": reason, "by": who, "comment": parent["html_url"]}
-    gh.write_file(LEDGER_PATH, branch, ledger + json.dumps(record) + "\n", ledger_sha,
-                  "garuda: ledger entry for PR #" + str(pr["number"]))
+    # The same lesson as an episode, in the format garuda_memory.recall reads
+    episodes, episodes_sha = gh.read_file(EPISODES_PATH, branch)
+    episode = {"date": datetime.date.today().isoformat(), "pr": pr["number"], "file": meta["file"],
+               "label": "dismissed", "what": 'Garuda said "' + meta["title"] + '"', "error": "",
+               "fix": "Dismissed by @" + who + ": " + reason, "outcome": "Do not raise again",
+               "comment": parent["html_url"]}
+    gh.write_file(EPISODES_PATH, branch, episodes + json.dumps(episode) + "\n", episodes_sha,
+                  "garuda: episode for PR #" + str(pr["number"]))
 
     reply("Got it. Saved to `" + DISMISSED_PATH + "` in " + commit[:7] +
           ", so I won't raise this again on this repo. It merges with this PR, and you can revert it like any other line.")
