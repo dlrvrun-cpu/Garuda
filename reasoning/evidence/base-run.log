@@ -1,0 +1,18 @@
+=== sf apex run test --class-names OpportunityServiceTest --result-format human   (branch: main)
+Deploying to org garuda-ci ... done
+Running 5 tests
+OpportunityServiceTest.closeOne                      Pass  398ms
+  DEBUG|SOQL queries: 3 of 100 | DML: 3 of 150 | CPU: 212ms
+OpportunityServiceTest.bulkClose                     Pass  1,104ms
+  DEBUG|SOQL queries: 2 of 100 | DML: 2 of 150 | CPU: 640ms
+OpportunityServiceTest.expireStaleClosesAll          Pass  1,212ms
+  DEBUG|SOQL queries: 3 of 100 | DML: 2 of 150 | CPU: 701ms
+OpportunityServiceTest.markWonBulk                   Pass  1,380ms
+  DEBUG|SOQL queries: 4 of 100 | DML: 3 of 150 | CPU: 733ms
+OpportunityServiceTest.reopenDefaultsToProspecting   Pass  301ms
+  DEBUG|SOQL queries: 2 of 100 | DML: 1 of 150 | CPU: 98ms
+
+=== Test Summary
+Outcome: Passed
+Tests Ran: 5
+Pass Rate: 100%

@@ -1,0 +1,412 @@
+APEX_CODE,FINEST;APEX_PROFILING,INFO;DB,INFO
+12:04:11.0 (101)|CODE_UNIT_STARTED|[EXTERNAL]|OpportunityServiceTest.bulkClose
+12:04:11.0 (2210)|SOQL_EXECUTE_BEGIN|[34]|Aggregations:0|SELECT Id, AccountId FROM Opportunity
+12:04:11.0 (2390)|SOQL_EXECUTE_END|[34]|Rows:200
+12:04:11.0 (3101)|METHOD_ENTRY|[36]|OpportunityService.closeLostOpportunities(List<Opportunity>)
+12:04:11.0 (4000)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (4017)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (4026)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (4047)|DML_END|[23]
+12:04:11.0 (4052)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (4069)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (4078)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (4099)|DML_END|[23]
+12:04:11.0 (4104)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (4121)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (4130)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (4151)|DML_END|[23]
+12:04:11.0 (4156)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (4173)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (4182)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (4203)|DML_END|[23]
+12:04:11.0 (4208)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (4225)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (4234)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (4255)|DML_END|[23]
+12:04:11.0 (4260)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (4277)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (4286)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (4307)|DML_END|[23]
+12:04:11.0 (4312)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (4329)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (4338)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (4359)|DML_END|[23]
+12:04:11.0 (4364)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (4381)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (4390)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (4411)|DML_END|[23]
+12:04:11.0 (4416)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (4433)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (4442)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (4463)|DML_END|[23]
+12:04:11.0 (4468)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (4485)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (4494)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (4515)|DML_END|[23]
+12:04:11.0 (4520)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (4537)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (4546)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (4567)|DML_END|[23]
+12:04:11.0 (4572)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (4589)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (4598)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (4619)|DML_END|[23]
+12:04:11.0 (4624)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (4641)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (4650)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (4671)|DML_END|[23]
+12:04:11.0 (4676)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (4693)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (4702)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (4723)|DML_END|[23]
+12:04:11.0 (4728)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (4745)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (4754)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (4775)|DML_END|[23]
+12:04:11.0 (4780)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (4797)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (4806)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (4827)|DML_END|[23]
+12:04:11.0 (4832)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (4849)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (4858)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (4879)|DML_END|[23]
+12:04:11.0 (4884)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (4901)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (4910)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (4931)|DML_END|[23]
+12:04:11.0 (4936)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (4953)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (4962)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (4983)|DML_END|[23]
+12:04:11.0 (4988)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (5005)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (5014)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (5035)|DML_END|[23]
+12:04:11.0 (5040)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (5057)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (5066)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (5087)|DML_END|[23]
+12:04:11.0 (5092)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (5109)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (5118)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (5139)|DML_END|[23]
+12:04:11.0 (5144)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (5161)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (5170)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (5191)|DML_END|[23]
+12:04:11.0 (5196)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (5213)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (5222)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (5243)|DML_END|[23]
+12:04:11.0 (5248)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (5265)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (5274)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (5295)|DML_END|[23]
+12:04:11.0 (5300)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (5317)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (5326)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (5347)|DML_END|[23]
+12:04:11.0 (5352)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (5369)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (5378)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (5399)|DML_END|[23]
+12:04:11.0 (5404)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (5421)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (5430)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (5451)|DML_END|[23]
+12:04:11.0 (5456)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (5473)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (5482)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (5503)|DML_END|[23]
+12:04:11.0 (5508)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (5525)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (5534)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (5555)|DML_END|[23]
+12:04:11.0 (5560)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (5577)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (5586)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (5607)|DML_END|[23]
+12:04:11.0 (5612)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (5629)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (5638)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (5659)|DML_END|[23]
+12:04:11.0 (5664)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (5681)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (5690)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (5711)|DML_END|[23]
+12:04:11.0 (5716)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (5733)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (5742)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (5763)|DML_END|[23]
+12:04:11.0 (5768)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (5785)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (5794)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (5815)|DML_END|[23]
+12:04:11.0 (5820)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (5837)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (5846)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (5867)|DML_END|[23]
+12:04:11.0 (5872)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (5889)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (5898)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (5919)|DML_END|[23]
+12:04:11.0 (5924)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (5941)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (5950)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (5971)|DML_END|[23]
+12:04:11.0 (5976)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (5993)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (6002)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (6023)|DML_END|[23]
+12:04:11.0 (6028)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (6045)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (6054)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (6075)|DML_END|[23]
+12:04:11.0 (6080)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (6097)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (6106)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (6127)|DML_END|[23]
+12:04:11.0 (6132)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (6149)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (6158)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (6179)|DML_END|[23]
+12:04:11.0 (6184)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (6201)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (6210)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (6231)|DML_END|[23]
+12:04:11.0 (6236)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (6253)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (6262)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (6283)|DML_END|[23]
+12:04:11.0 (6288)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (6305)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (6314)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (6335)|DML_END|[23]
+12:04:11.0 (6340)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (6357)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (6366)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (6387)|DML_END|[23]
+12:04:11.0 (6392)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (6409)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (6418)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (6439)|DML_END|[23]
+12:04:11.0 (6444)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (6461)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (6470)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (6491)|DML_END|[23]
+12:04:11.0 (6496)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (6513)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (6522)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (6543)|DML_END|[23]
+12:04:11.0 (6548)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (6565)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (6574)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (6595)|DML_END|[23]
+12:04:11.0 (6600)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (6617)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (6626)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (6647)|DML_END|[23]
+12:04:11.0 (6652)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (6669)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (6678)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (6699)|DML_END|[23]
+12:04:11.0 (6704)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (6721)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (6730)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (6751)|DML_END|[23]
+12:04:11.0 (6756)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (6773)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (6782)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (6803)|DML_END|[23]
+12:04:11.0 (6808)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (6825)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (6834)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (6855)|DML_END|[23]
+12:04:11.0 (6860)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (6877)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (6886)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (6907)|DML_END|[23]
+12:04:11.0 (6912)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (6929)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (6938)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (6959)|DML_END|[23]
+12:04:11.0 (6964)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (6981)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (6990)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (7011)|DML_END|[23]
+12:04:11.0 (7016)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (7033)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (7042)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (7063)|DML_END|[23]
+12:04:11.0 (7068)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (7085)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (7094)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (7115)|DML_END|[23]
+12:04:11.0 (7120)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (7137)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (7146)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (7167)|DML_END|[23]
+12:04:11.0 (7172)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (7189)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (7198)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (7219)|DML_END|[23]
+12:04:11.0 (7224)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (7241)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (7250)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (7271)|DML_END|[23]
+12:04:11.0 (7276)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (7293)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (7302)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (7323)|DML_END|[23]
+12:04:11.0 (7328)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (7345)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (7354)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (7375)|DML_END|[23]
+12:04:11.0 (7380)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (7397)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (7406)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (7427)|DML_END|[23]
+12:04:11.0 (7432)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (7449)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (7458)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (7479)|DML_END|[23]
+12:04:11.0 (7484)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (7501)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (7510)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (7531)|DML_END|[23]
+12:04:11.0 (7536)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (7553)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (7562)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (7583)|DML_END|[23]
+12:04:11.0 (7588)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (7605)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (7614)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (7635)|DML_END|[23]
+12:04:11.0 (7640)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (7657)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (7666)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (7687)|DML_END|[23]
+12:04:11.0 (7692)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (7709)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (7718)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (7739)|DML_END|[23]
+12:04:11.0 (7744)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (7761)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (7770)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (7791)|DML_END|[23]
+12:04:11.0 (7796)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (7813)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (7822)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (7843)|DML_END|[23]
+12:04:11.0 (7848)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (7865)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (7874)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (7895)|DML_END|[23]
+12:04:11.0 (7900)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (7917)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (7926)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (7947)|DML_END|[23]
+12:04:11.0 (7952)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (7969)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (7978)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (7999)|DML_END|[23]
+12:04:11.0 (8004)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (8021)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (8030)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (8051)|DML_END|[23]
+12:04:11.0 (8056)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (8073)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (8082)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (8103)|DML_END|[23]
+12:04:11.0 (8108)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (8125)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (8134)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (8155)|DML_END|[23]
+12:04:11.0 (8160)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (8177)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (8186)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (8207)|DML_END|[23]
+12:04:11.0 (8212)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (8229)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (8238)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (8259)|DML_END|[23]
+12:04:11.0 (8264)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (8281)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (8290)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (8311)|DML_END|[23]
+12:04:11.0 (8316)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (8333)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (8342)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (8363)|DML_END|[23]
+12:04:11.0 (8368)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (8385)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (8394)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (8415)|DML_END|[23]
+12:04:11.0 (8420)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (8437)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (8446)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (8467)|DML_END|[23]
+12:04:11.0 (8472)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (8489)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (8498)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (8519)|DML_END|[23]
+12:04:11.0 (8524)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (8541)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (8550)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (8571)|DML_END|[23]
+12:04:11.0 (8576)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (8593)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (8602)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (8623)|DML_END|[23]
+12:04:11.0 (8628)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (8645)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (8654)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (8675)|DML_END|[23]
+12:04:11.0 (8680)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (8697)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (8706)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (8727)|DML_END|[23]
+12:04:11.0 (8732)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (8749)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (8758)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (8779)|DML_END|[23]
+12:04:11.0 (8784)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (8801)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (8810)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (8831)|DML_END|[23]
+12:04:11.0 (8836)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (8853)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (8862)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (8883)|DML_END|[23]
+12:04:11.0 (8888)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (8905)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (8914)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (8935)|DML_END|[23]
+12:04:11.0 (8940)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (8957)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (8966)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (8987)|DML_END|[23]
+12:04:11.0 (8992)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (9009)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (9018)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (9039)|DML_END|[23]
+12:04:11.0 (9044)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (9061)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (9070)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (9091)|DML_END|[23]
+12:04:11.0 (9096)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (9113)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (9122)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (9143)|DML_END|[23]
+12:04:11.0 (9148)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (9165)|SOQL_EXECUTE_END|[21]|Rows:1
+12:04:11.0 (9174)|DML_BEGIN|[23]|Op:Update|Type:Account|Rows:1
+12:04:11.0 (9195)|DML_END|[23]
+12:04:11.0 (9200)|SOQL_EXECUTE_BEGIN|[21]|Aggregations:0|SELECT Id, Lost_Count__c FROM Account WHERE Id = :tmpVar1
+12:04:11.0 (9203)|EXCEPTION_THROWN|[21]|System.LimitException: Too many SOQL queries: 101
+12:04:11.0 (9205)|FATAL_ERROR|System.LimitException: Too many SOQL queries: 101
+12:04:11.0 (9209)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 101 out of 100 ******* CLOSE TO LIMIT
+  Number of DML statements: 100 out of 150
+12:04:11.0 (9240)|CODE_UNIT_FINISHED|OpportunityServiceTest.bulkClose
