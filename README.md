@@ -52,3 +52,7 @@ python semantic_compaction.py       # reads conversation.txt, prints the convers
 ```
 
 Pass your own text file to either script to try your own PR. See [`context/README.md`](context/README.md) for the input formats.
+
+## Episode 4: reasoning with Tree of Thoughts
+
+[`reasoning/`](reasoning/) adds a small Tree of Thoughts search: propose a few genuinely different next steps, score each partial path, prune the dead ends, and expand only the best. It runs on the same sample PR, using the context and memory from earlier episodes to build the problem. See [`reasoning/README.md`](reasoning/README.md).
