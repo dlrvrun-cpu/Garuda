@@ -1,0 +1,64 @@
+{
+  "_note": "Saved hypotheses for the sample PR, so the demo runs with no API key. --live asks Claude for them. The verdicts always come from the probes, never from the model.",
+  "hypotheses": [
+    {
+      "id": "H1",
+      "claim": "This PR added a query inside the loop, so it runs once per Opportunity.",
+      "predictions": [
+        {
+          "says": "The failing line was added by this PR",
+          "probe": "failing_line_in_diff",
+          "expect": true
+        },
+        {
+          "says": "It passes with 1 record and fails with 200",
+          "probe": "fails_only_in_bulk",
+          "expect": true
+        },
+        {
+          "says": "The same line runs one query per record",
+          "probe": "queries_per_record",
+          "expect": true
+        },
+        {
+          "says": "The test passes on main",
+          "probe": "fails_on_main",
+          "expect": false
+        }
+      ]
+    },
+    {
+      "id": "H2",
+      "claim": "The test was already broken on main. Not this PR's fault.",
+      "predictions": [
+        {
+          "says": "The test fails on main too",
+          "probe": "fails_on_main",
+          "expect": true
+        }
+      ]
+    },
+    {
+      "id": "H3",
+      "claim": "Trigger recursion: the update fires the trigger, and closeLostOpportunities runs again.",
+      "predictions": [
+        {
+          "says": "closeLostOpportunities runs more than once in the test",
+          "probe": "runs_more_than_once",
+          "expect": true
+        }
+      ]
+    },
+    {
+      "id": "H4",
+      "claim": "Someone changed the test, and it now builds more data than before.",
+      "predictions": [
+        {
+          "says": "This PR changes OpportunityServiceTest.cls",
+          "probe": "diff_touches_test",
+          "expect": true
+        }
+      ]
+    }
+  ]
+}

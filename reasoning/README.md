@@ -1,6 +1,23 @@
-# Garuda's reasoning: Tree of Thoughts
+# Garuda's reasoning
 
-Building Garuda, Episode 4. Plain Python, no libraries needed for the demo.
+Building Garuda, Episode 4. Plain Python, no libraries needed for the demos.
+
+## Hypothesis testing: why did CI fail?
+
+| File | What it does |
+|---|---|
+| `hypothesis_testing.py` | Observe the failure, take a few hypotheses with checkable predictions, test each against the diff, the CI log, the debug log and a run on main (cheapest first), keep the one whose predictions all held, and hand the fix to a person. Probes are read-only. Verdicts come from evidence, never from the model. |
+| `saved_hypotheses.json` | Four saved hypotheses for the sample PR. `--live` asks Claude for them instead. |
+| `evidence/` | Sample outside state: the test class run on main, and the Apex debug log for bulkClose. |
+| `test_hypothesis_testing.py` | 9 tests. |
+
+```bash
+cd reasoning
+python hypothesis_testing.py           # H1 (new query in the loop) supported, H2-H4 refuted
+python -m unittest test_hypothesis_testing.py
+```
+
+## Tree of Thoughts: which fix to suggest?
 
 | File | What it does |
 |---|---|
